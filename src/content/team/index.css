@@ -1,0 +1,10 @@
+section.team .container {
+  max-width: 80%;
+}
+
+section.team .team-pictures {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+  justify-content: center;
+  padding: 0;
+}

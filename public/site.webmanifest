@@ -1,0 +1,20 @@
+{
+  "name": "HackTJ",
+  "short_name": "HackTJ 8.0",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png?v=JyAvAkJmXn",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png?v=JyAvAkJmXn",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "https://hacktj.org/2021",
+  "display": "standalone",
+  "theme_color": "#33cccc",
+  "background_color": "#ffffff"
+}
