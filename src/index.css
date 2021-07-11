@@ -4,7 +4,7 @@
 @import-normalize;
 
 :root {
-  --theme-primary: #33cccc;
+  --theme-primary: #fed049;
   overflow-y: scroll;
   text-size-adjust: 100%;
   box-sizing: border-box;
@@ -343,7 +343,7 @@ table {
 }
 
 table caption {
-  color: #555;
+  color: #333;
   font-size: 85%;
   font-style: italic;
   line-height: 48px;
@@ -387,6 +387,7 @@ table tr {
   table td,
   table th {
     padding: 0 2.5em;
+    color: #333;
   }
 }
 
@@ -1271,7 +1272,7 @@ button.upload,
 button:hover,
 .button:hover,
 .altbutton:hover {
-  color: #fff;
+  color: #333;
   background-color: var(--theme-primary);
   border-color: var(--theme-primary);
 }
@@ -1593,11 +1594,11 @@ section h1.section-title {
 
 section.colored {
   background-color: var(--theme-primary);
-  color: #fff;
+  color: #333;
 }
 
 section.colored h1.section-title {
-  color: #fff;
+  color: #333;
 }
 
 input {
@@ -1691,7 +1692,7 @@ button.is-done .icon,
 button:hover .text,
 .button:hover .text,
 .altbutton:hover .text {
-  color: #fff;
+  color: #333;
 }
 
 a.button {
@@ -1721,7 +1722,7 @@ a.flatbutton {
   width: 350px;
   margin: 5px auto;
   display: block;
-  color: #fff;
+  color: #333;
   text-decoration: none;
   text-align: center;
   line-height: 50px;
@@ -1767,7 +1768,7 @@ p.large {
 }
 
 .register-button .event-ticketing h3 {
-  color: #fff !important;
+  color: #333 !important;
 }
 
 .animation-container {
