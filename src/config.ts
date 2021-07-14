@@ -9,7 +9,7 @@ dayjs.extend(isBetween);
 const globals = {
   registration: {
     start: dayjs({
-      year: 2021,
+      year: 2022,
       month: 1,
       day: 22,
       hour: 20,
@@ -19,7 +19,7 @@ const globals = {
       zone: "America/New_York",
     }),
     end: dayjs({
-      year: 2021,
+      year: 2022,
       month: 2,
       day: 26,
       hour: 20,
@@ -31,7 +31,7 @@ const globals = {
   },
   event: {
     start: dayjs({
-      year: 2021,
+      year: 2022,
       month: 3,
       day: 10,
       hour: 0,
@@ -41,7 +41,7 @@ const globals = {
       zone: "America/New_York",
     }),
     end: dayjs({
-      year: 2021,
+      year: 2022,
       month: 3,
       day: 11,
       hour: 0,

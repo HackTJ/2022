@@ -1,6 +1,6 @@
 # HackTJ 8.0
 
-[![lint](https://github.com/HackTJ/2021/workflows/lint/badge.svg?event=push)](https://github.com/HackTJ/2021/actions?query=workflow%3Alint)
+[![lint](https://github.com/HackTJ/2022/workflows/lint/badge.svg?event=push)](https://github.com/HackTJ/2022/actions?query=workflow%3Alint)
 
 The website for HackTJ 8.0.
 
@@ -15,7 +15,7 @@ We use React.
 ### Creating a New Event Website
 
 ```sh
-git clone git@github.com:HackTJ/2021.git 2022 && cd 2022/
+git clone git@github.com:HackTJ/2022.git 2022 && cd 2022/
 yarn install
 git reset "$(git commit-tree HEAD^"{tree}" -m "Push HackTJ 8.0 website" -m "$(yarn run git-history-coauthors)")"  # squash all commits into 1
 git remote set-url origin git@github.com:HackTJ/2022.git
@@ -28,16 +28,16 @@ git push
 - `yarn dedupe`
 - `yarn run lint`
 - `yarn run test`
-- `yarn run switch event`: switch to the event repository (configures the project so that builds are for `/2021`)
+- `yarn run switch event`: switch to the event repository (configures the project so that builds are for `/2022`)
 - `yarn run switch homepage`: switch to the homepage repository (configures the project so that builds are for `/`)
 - `yarn run start`: starts a development server on [port 3000](localhost:3000) and watches files for changes, compiling them on the fly
 - `yarn run build`: compiles all files to the `build/` directory but doesn't watch for changes or start a server
 - `yarn serve build/`: starts a static server using the files in `build/`
-- `yarn run deploy event`: pushes to the `gh-pages` branch of this repository and deploys the site to <https://hacktj.org/2021>
+- `yarn run deploy event`: pushes to the `gh-pages` branch of this repository and deploys the site to <https://hacktj.org/2022>
 - `yarn run deploy homepage`: pushes to the [hacktj.github.io repo](https://github.com/HackTJ/hacktj.github.io) and deploys the site to <https://hacktj.org>
 - `yarn run deploy all`: shortcut for both `yarn run deploy event` and `yarn run deploy homepage`
 
-In the case that one of the endpoints (/2021 or /) doesn't work but the other does, immediately set up a hardcoded redirect in the nonfunctional repository to redirect to the correct site.
+In the case that one of the endpoints (/2022 or /) doesn't work but the other does, immediately set up a hardcoded redirect in the nonfunctional repository to redirect to the correct site.
 
 To test a production build locally:
 
