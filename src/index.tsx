@@ -10,8 +10,8 @@ import openGraphImage from "./images/opengraph.png";
 import twitterImage from "./images/twitter.png";
 import preval from "preval.macro";
 
-// Redirect to /2021:
-// window.location.href = "https://hacktj.org/2021";
+// Redirect to /2022:
+// window.location.href = "https://hacktj.org/2022";
 
 const rootElement = document.getElementById("root");
 const app = (

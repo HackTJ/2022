@@ -1,19 +1,19 @@
 #!/usr/bin/env bash
 if [ "$1" == "event" ]; then
-  base_url="/2021"
+  base_url="/2022"
   reactSnap_inlineCss="false"
 
-  sed 's|<Routes>|<Routes basename="/2021">|' src/App.tsx > src/tmp.$$.tsx && mv src/tmp.$$.tsx src/App.tsx
+  sed 's|<Routes>|<Routes basename="/2022">|' src/App.tsx > src/tmp.$$.tsx && mv src/tmp.$$.tsx src/App.tsx
 
   meta_label="HackTJ 8.0"
 
   rm -f public/CNAME
-  git remote set-url origin git@github.com:HackTJ/2021.git
+  git remote set-url origin git@github.com:HackTJ/2022.git
 elif [ "$1" == "homepage" ]; then
   base_url="/"
   reactSnap_inlineCss="true"
 
-  sed 's|<Routes basename="/2021">|<Routes>|' src/App.tsx > src/tmp.$$.tsx && mv src/tmp.$$.tsx src/App.tsx
+  sed 's|<Routes basename="/2022">|<Routes>|' src/App.tsx > src/tmp.$$.tsx && mv src/tmp.$$.tsx src/App.tsx
 
   meta_label="HackTJ"
 

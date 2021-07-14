@@ -32,7 +32,7 @@ const App = () => (
     <div>
       <PageScrollProgress />
       <BrowserRouter>
-        <Routes basename="/2021">
+        <Routes basename="/2022">
           <Route path="/registration" element={<RegistrationPage />} />
           <Route path="/history" element={<HistoryPage />} />
           <Route path="/" element={<MainPage />} />
