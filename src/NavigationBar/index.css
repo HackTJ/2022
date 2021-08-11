@@ -6,7 +6,7 @@
 
 .nav {
   background: var(--theme-primary);
-  color: #fff;
+  color: #000;
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -22,13 +22,13 @@
 }
 
 .nav-link {
-  color: #fff;
+  color: #333;
   text-decoration: none;
   font-size: 18px;
 }
 
 .nav-link:hover {
-  color: #fff;
+  color: #333;
   text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.25);
+  text-decoration-color: rgba(0, 0, 0, 0.25);
 }

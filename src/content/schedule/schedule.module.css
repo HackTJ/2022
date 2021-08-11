@@ -26,7 +26,7 @@
   font-size: 1.1rem;
   padding: 1em;
   transition: 0.1s ease-in-out;
-  color: white;
+  color: #333;
   opacity: 0.6;
   outline: none; /* TODO: I don't like this */
 }

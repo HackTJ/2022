@@ -39,3 +39,6 @@ yarn-error.log*
 tmp.**.json
 tmp.**.js
 tmp.**.html
+
+# ide
+.idea/*
