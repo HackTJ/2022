@@ -76,13 +76,13 @@ const Statistics = () => (
         </div>
         <h1 className="section-title">Demographics</h1>
         <div>
-          <Pie data={schoolData} type="pie" />
+          <Pie data={schoolData} />
         </div>
         <div>
-          <Pie data={genderData} type="pie" />
+          <Pie data={genderData} />
         </div>
         <div>
-          <Pie data={graduationData} type="pie" />
+          <Pie data={graduationData} />
         </div>
       </div>
     </section>
