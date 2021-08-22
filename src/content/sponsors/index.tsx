@@ -208,20 +208,8 @@ const Sponsors = () => (
         </div>
         <p className="large">
           Interested in sponsoring? Check out our{" "}
-          <Link
-            to="sponsorship7.5.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            7.5 sponsorship packet
-          </Link>{" "}
-          and{" "}
-          <Link
-            to="sponsorship8.0.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            8.0 sponsorship packet
+          <Link to="sponsorship.pdf" target="_blank" rel="noopener noreferrer">
+            9.0 sponsorship packet
           </Link>
           . Please email us at{" "}
           <a href="mailto:sponsor@hacktj.org">sponsor@hacktj.org</a> if
