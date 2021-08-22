@@ -7,7 +7,7 @@ import Questions from "../../content/questions";
 import Sponsors from "../../content/sponsors";
 // import Statistics from "../../content/statistics";
 import Schedule from "../../content/schedule";
-import Team from "../../content/team";
+// import Team from "../../content/team";
 // import VenueMap from "../../content/venue-map";
 
 import config from "../../config";
@@ -34,7 +34,7 @@ const MainPage = () => {
       <Sponsors />
       {/* <Statistics /> */}
       <Schedule />
-      <Team />
+      {/* <Team /> */}
       {/* <VenueMap /> */}
     </>
   );

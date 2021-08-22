@@ -18,9 +18,9 @@ const NavigationBar = () => (
       <NavItem>
         <NavLink href="#schedule">Schedule</NavLink>
       </NavItem>
-      <NavItem>
+      {/* <NavItem>
         <NavLink href="#team">Team</NavLink>
-      </NavItem>
+      </NavItem> */}
       {/* <NavItem><NavLink href="#map">Map</NavLink></NavItem> */}
     </Nav>
   </Navbar>
