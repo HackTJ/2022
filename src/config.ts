@@ -33,7 +33,7 @@ const globals = {
     start: dayjs({
       year: 2022,
       month: 3,
-      day: 10,
+      day: 16,
       hour: 0,
       minute: 0,
       second: 0,
@@ -43,7 +43,7 @@ const globals = {
     end: dayjs({
       year: 2022,
       month: 3,
-      day: 11,
+      day: 17,
       hour: 0,
       minute: 0,
       second: 0,
