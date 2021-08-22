@@ -28,18 +28,18 @@ const Landing: FunctionComponent<{}> = () => (
       </div>
       <div className={styles.location}>Online</div>
       <div className="register-button-block-old top">
-        {/* 
-          TODO: show this link only if the `/registration` route is enabled. 
-          maybe do this using a config variable and `preval` in App.tsx and 
+        {/*
+          TODO: show this link only if the `/registration` route is enabled.
+          maybe do this using a config variable and `preval` in App.tsx and
           `preval` here to control at build-time whether `/registration` should
           be enabled.
         */}
-        <Link
+        {/* <Link
           className="button register-button mentor blackbutton"
           to="registration"
         >
-          Register for HackTJ 8.0
-        </Link>
+          Register for HackTJ 9.0
+        </Link> */}
         <a
           className="button register-button mentor blackbutton"
           href="https://www.facebook.com/pg/HackTJOfficial/photos/?tab=album&album_id=2168769876535523"
