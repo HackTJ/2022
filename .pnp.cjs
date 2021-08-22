@@ -39,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.14.1"],
             ["@testing-library/react", "virtual:cb075bc390d8144e81c73fc5a3fad17b837b1adfe46d8dcf0178a99ce4df41f9795347b86a4c8a10b22dc4a57a2b7d54202f3dddf710c48775c422e5d88b04b7#npm:12.0.0"],
             ["@testing-library/user-event", "virtual:cb075bc390d8144e81c73fc5a3fad17b837b1adfe46d8dcf0178a99ce4df41f9795347b86a4c8a10b22dc4a57a2b7d54202f3dddf710c48775c422e5d88b04b7#npm:13.2.1"],
+            ["@types/aria-query", "npm:4.2.2"],
             ["@types/chart.js", "npm:2.9.34"],
             ["@types/jest", "npm:27.0.1"],
             ["@types/lodash", "npm:4.14.172"],
@@ -5715,7 +5716,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/dom", "npm:8.1.0"],
             ["@babel/code-frame", "npm:7.12.13"],
             ["@babel/runtime", "npm:7.13.7"],
-            ["@types/aria-query", "npm:4.2.1"],
+            ["@types/aria-query", "npm:4.2.2"],
             ["aria-query", "npm:4.2.2"],
             ["chalk", "npm:4.1.0"],
             ["dom-accessibility-api", "npm:0.5.6"],
@@ -5804,10 +5805,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/aria-query", [
-        ["npm:4.2.1", {
-          "packageLocation": "./.yarn/cache/@types-aria-query-npm-4.2.1-4248197909-cf60cc7aa0.zip/node_modules/@types/aria-query/",
+        ["npm:4.2.2", {
+          "packageLocation": "./.yarn/cache/@types-aria-query-npm-4.2.2-c7fefe27a4-6f2ce11d91.zip/node_modules/@types/aria-query/",
           "packageDependencies": [
-            ["@types/aria-query", "npm:4.2.1"]
+            ["@types/aria-query", "npm:4.2.2"]
           ],
           "linkType": "HARD",
         }]
@@ -12842,6 +12843,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.14.1"],
             ["@testing-library/react", "virtual:cb075bc390d8144e81c73fc5a3fad17b837b1adfe46d8dcf0178a99ce4df41f9795347b86a4c8a10b22dc4a57a2b7d54202f3dddf710c48775c422e5d88b04b7#npm:12.0.0"],
             ["@testing-library/user-event", "virtual:cb075bc390d8144e81c73fc5a3fad17b837b1adfe46d8dcf0178a99ce4df41f9795347b86a4c8a10b22dc4a57a2b7d54202f3dddf710c48775c422e5d88b04b7#npm:13.2.1"],
+            ["@types/aria-query", "npm:4.2.2"],
             ["@types/chart.js", "npm:2.9.34"],
             ["@types/jest", "npm:27.0.1"],
             ["@types/lodash", "npm:4.14.172"],

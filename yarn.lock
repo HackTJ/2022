@@ -2787,10 +2787,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/aria-query@npm:^4.2.0":
-  version: 4.2.1
-  resolution: "@types/aria-query@npm:4.2.1"
-  checksum: cf60cc7aa0ed52514e8c7289776de9bb3321217d48f54c95d63e1e1eb9940689c1fd3e39d68da5eaee1541108363f0113007f67d6e32e7fbc983526f08e5f0ce
+"@types/aria-query@npm:^4.2.0, @types/aria-query@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "@types/aria-query@npm:4.2.2"
+  checksum: 6f2ce11d91e2d665f3873258db19da752d91d85d3679eb5efcdf9c711d14492287e1e4eb52613b28e60375841a9e428594e745b68436c963d8bad4bf72188df3
   languageName: node
   linkType: hard
 
@@ -8681,6 +8681,7 @@ fsevents@^1.2.7:
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.0.0
     "@testing-library/user-event": ^13.2.1
+    "@types/aria-query": ^4.2.2
     "@types/chart.js": ^2.9.34
     "@types/jest": ^27.0.1
     "@types/lodash": ^4.14.172
