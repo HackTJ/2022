@@ -1,0 +1,103 @@
+{
+  "name": "hacktj-2022",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://hacktj.org/2022",
+  "dependencies": {
+    "chart.js": "^3.5.0",
+    "dayjs": "^1.10.6",
+    "history": "^5.0.0",
+    "lodash": "^4.17.21",
+    "mapbox-gl": "^2.4.0",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^3.0.4",
+    "react-dom": "^17.0.2",
+    "react-helmet-async": "^1.0.9",
+    "react-map-gl": "^6.1.16",
+    "react-parallax-tilt": "^1.5.54",
+    "react-router": "^6.0.0-beta.0",
+    "react-router-dom": "^6.0.0-beta.0",
+    "reactstrap": "^8.9.0",
+    "web-vitals": "^2.1.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "start": "run switch homepage && react-scripts start",
+    "build:js": "react-scripts build",
+    "build:css": "purgecss --content build/**/*.{html,js} --css build/**/*.css --output build/static/css --font-face --keyframes --rejected",
+    "build": "run build:js && run build:css && react-snap; run build:css",
+    "test": "react-scripts test",
+    "lint": "prettier . --write; eslint src/ --fix",
+    "tint": "node tint-sponsor-images.js",
+    "switch": "./switch",
+    "deploy": "./deploy",
+    "git-history-coauthors": "node git-history-coauthors.js"
+  },
+  "reactSnap": {
+    "minifyCss": {
+      "inline": [
+        "all"
+      ],
+      "level": 2,
+      "sourceMap": true,
+      "sourceMapInlineSources": true
+    },
+    "fixWebpackChunksIssue": false,
+    "inlineCss": false,
+    "cacheAjaxRequests": true,
+    "http2PushManifest": true,
+    "preloadImages": true,
+    "asyncScriptTags": true
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "devDependencies": {
+    "@testing-library/dom": "^8.1.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/chart.js": "^2.9.34",
+    "@types/jest": "^27.0.0",
+    "@types/lodash": "^4.14.172",
+    "@types/node": "^16.4.13",
+    "@types/preval.macro": "^3.0.0",
+    "@types/react": "^17.0.16",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-map-gl": "^5.2.10",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "eslint": "^7.32.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^5.9.0",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^3.2.3",
+    "htmlparser2": "^6.1.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jimp": "^0.16.1",
+    "nodegit": "^0.27.0",
+    "prettier": "^2.3.2",
+    "preval.macro": "^5.0.0",
+    "purgecss": "^4.0.3",
+    "react-scripts": "^4.0.3",
+    "react-snap": "^1.23.0",
+    "serve": "^12.0.0",
+    "source-map-explorer": "^2.5.2",
+    "typescript": "4.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HackTJ/2022.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HackTJ/2022/issues"
+  }
+}

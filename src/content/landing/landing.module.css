@@ -1,0 +1,53 @@
+.hero {
+  height: 100vh;
+  min-height: 750px;
+  padding-top: 5%;
+  /* position: relative; */
+  font-family: "Roboto", sans-serif;
+  background: url(../../images/tj-dome.jpg) center top;
+  background-size: cover;
+
+  /* parallax */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tilt {
+  margin: auto;
+  width: 50%;
+  background-color: #5ca0f2;
+  background: radial-gradient(
+    rgba(92, 160, 242, 0.5),
+    rgba(245, 247, 246, 0.5)
+  );
+  padding: 1rem;
+  border-radius: 10px;
+  color: rgb(53, 53, 53);
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  width: 75%;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+  .logo {
+    max-width: 90%;
+  }
+}
+
+.eventInformation {
+  text-align: center;
+}
+.date {
+  composes: eventInformation;
+  font-size: clamp(1rem, 4vw, 3rem);
+}
+.location {
+  composes: eventInformation;
+  font-size: clamp(1rem, 3vw, 2rem);
+}

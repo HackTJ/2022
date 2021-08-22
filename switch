@@ -1,0 +1,105 @@
+#!/usr/bin/env bash
+if [ "$1" == "event" ]; then
+  base_url="/2022"
+  reactSnap_inlineCss="false"
+
+  sed 's|<Routes>|<Routes basename="/2022">|' src/App.tsx > src/tmp.$$.tsx && mv src/tmp.$$.tsx src/App.tsx
+
+  meta_label="HackTJ 8.0"
+
+  rm -f public/CNAME
+  git remote set-url origin git@github.com:HackTJ/2022.git
+elif [ "$1" == "homepage" ]; then
+  base_url="/"
+  reactSnap_inlineCss="true"
+
+  sed 's|<Routes basename="/2022">|<Routes>|' src/App.tsx > src/tmp.$$.tsx && mv src/tmp.$$.tsx src/App.tsx
+
+  meta_label="HackTJ"
+
+  cp CNAME.homepage public/CNAME
+  git remote set-url origin git@github.com:HackTJ/hacktj.github.io.git
+else
+  echo "Invalid argument"
+  exit 1
+fi
+
+# use `$homepage` and `$reactSnap_inlineCss` to update package.json:
+yarn node - <<JS
+  const parseBoolean = (a) => String(a).toLowerCase() === "true"; // == and === are the same here
+
+  let packageJson = require("./package.json");
+  packageJson.homepage = "https://hacktj.org$base_url";  // react-snap does not work when homepage is "."
+  packageJson.reactSnap.inlineCss = parseBoolean("$reactSnap_inlineCss");
+
+  const fs = require("fs");
+  const prettier = require("prettier");
+  const jsonOutput = JSON.stringify(packageJson);
+  const formattedJsonOutput = prettier.format(jsonOutput, { parser: "json-stringify" });
+  fs.writeFile("package.json", formattedJsonOutput);
+JS
+
+# use `$start_url` and `$meta_label` to update public/site.webmanifest:
+yarn node - <<JS
+  const fs = require("fs");
+  const readJson = (path) => JSON.parse(fs.readFileSync(path, "utf8"));
+
+  let manifest = readJson("./public/site.webmanifest");
+  manifest.start_url = "https://hacktj.org$base_url";
+  manifest.short_name = "$meta_label";
+
+  const prettier = require("prettier");
+  const jsonOutput = JSON.stringify(manifest);
+  const formattedJsonOutput = prettier.format(jsonOutput, { parser: "json-stringify" });
+  fs.writeFile("public/site.webmanifest", formattedJsonOutput);
+JS
+
+# use `$meta_label` and `$base_url` to update public/index.html:
+yarn node - << JS
+  const fs = require("fs");
+  const htmlparser2 = require("htmlparser2");
+  const domutils = htmlparser2.DomUtils;
+
+  const dom = htmlparser2.parseDocument(
+    fs.readFileSync("public/index.html", "utf8")
+  );
+
+  const findElementByTagName = (tagName, parentElement = dom) =>
+    parentElement.children.find(
+      (element) => domutils.getName(element) === tagName
+    );
+  const htmlRootElement = findElementByTagName("html");
+  const htmlHeadElement = findElementByTagName("head", htmlRootElement);
+
+  for (const index in htmlHeadElement.children) {
+    let element = htmlHeadElement.children[index];
+    const tagName = domutils.getName(element);
+    if (tagName === "title") {
+      // element.children: Node[]
+      // element.children[0]: Text, because this is a title element
+      // element.children[0].data: string
+      element.children[0].data = "$meta_label";
+    } else if (tagName === "base") {
+      element.attribs.href = "$base_url";
+    } else if (tagName === "meta") {
+      const metaValue =
+        domutils.getAttributeValue(element, "property") ||
+        domutils.getAttributeValue(element, "name") ||
+        "";
+      if (
+        metaValue === "title" ||
+        metaValue === "og:title" ||
+        metaValue === "twitter:title" ||
+        metaValue === "apple-mobile-web-app-title" ||
+        metaValue === "application-name"
+      ) {
+        element.attribs.content = "$meta_label";
+      }
+    }
+  }
+
+  const prettier = require("prettier");
+  const htmlOutput = domutils.getInnerHTML(dom);
+  const formattedHtmlOutput = prettier.format(htmlOutput, { parser: "html" });
+  fs.writeFile("public/index.html", formattedHtmlOutput);
+JS

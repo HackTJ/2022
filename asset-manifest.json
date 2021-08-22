@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/2022/static/css/main.4d5f08d9.chunk.css",
+    "main.js": "/2022/static/js/main.50f96bd0.chunk.js",
+    "main.js.map": "/2022/static/js/main.50f96bd0.chunk.js.map",
+    "runtime-main.js": "/2022/static/js/runtime-main.655486c0.js",
+    "runtime-main.js.map": "/2022/static/js/runtime-main.655486c0.js.map",
+    "static/js/2.50c1b04c.chunk.js": "/2022/static/js/2.50c1b04c.chunk.js",
+    "static/js/2.50c1b04c.chunk.js.map": "/2022/static/js/2.50c1b04c.chunk.js.map",
+    "index.html": "/2022/index.html",
+    "static/css/main.4d5f08d9.chunk.css.map": "/2022/static/css/main.4d5f08d9.chunk.css.map",
+    "static/js/2.50c1b04c.chunk.js.LICENSE.txt": "/2022/static/js/2.50c1b04c.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/2022/static/media/pe-icon-social.8846062f.svg",
+    "static/media/armyrotc.png": "/2022/static/media/armyrotc.bc084e6c.png",
+    "static/media/bigweblogo.5e8be410.svg": "/2022/static/media/bigweblogo.5e8be410.svg",
+    "static/media/brandmakers.png": "/2022/static/media/brandmakers.e7b26d38.png",
+    "static/media/cvent.png": "/2022/static/media/cvent.877f8ddb.png",
+    "static/media/eastbanc.png": "/2022/static/media/eastbanc.cfdd80a4.png",
+    "static/media/echoar.png": "/2022/static/media/echoar.aa923df9.png",
+    "static/media/hestiaacademy.png": "/2022/static/media/hestiaacademy.63c00e4c.png",
+    "static/media/inspiritai.png": "/2022/static/media/inspiritai.6307b820.png",
+    "static/media/lunchclub.png": "/2022/static/media/lunchclub.d1f71610.png",
+    "static/media/mlh.png": "/2022/static/media/mlh.9c39b975.png",
+    "static/media/opengraph.53a7e26c.png": "/2022/static/media/opengraph.53a7e26c.png",
+    "static/media/phone2action.png": "/2022/static/media/phone2action.e845ff9c.png",
+    "static/media/replit.png": "/2022/static/media/replit.f75678aa.png",
+    "static/media/temporary.png": "/2022/static/media/temporary.70ec2b71.png",
+    "static/media/thecodex.png": "/2022/static/media/thecodex.98cd1fe2.png",
+    "static/media/landing.module.css": "/2022/static/media/tj-dome.d9f338b8.png",
+    "static/media/tjpartnershipfund.png": "/2022/static/media/tjpartnershipfund.4f1a93cd.png",
+    "static/media/tjptsa.png": "/2022/static/media/tjptsa.5f3a3f4b.png",
+    "static/media/twitter.2fabe172.png": "/2022/static/media/twitter.2fabe172.png",
+    "static/media/yext.png": "/2022/static/media/yext.d8c6c7d0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.655486c0.js",
+    "static/js/2.50c1b04c.chunk.js",
+    "static/css/main.4d5f08d9.chunk.css",
+    "static/js/main.50f96bd0.chunk.js"
+  ]
+}

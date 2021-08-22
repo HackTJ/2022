@@ -1,0 +1,48 @@
+name: deploy-event
+
+on: workflow_dispatch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: "12"
+          check-latest: true
+
+      # github.event.pusher.name, github.event.pusher.email, actions@github.com
+      - name: setup git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir ~/.ssh
+          echo "${{ secrets.ACTIONS_DEPLOY_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -t rsa github.com
+
+      # https://github.com/actions/cache/blob/main/examples.md#node---yarn-2
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+
+      - uses: actions/cache@v2
+        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: install dependencies
+        run: yarn install --immutable --immutable-cache --check-cache
+
+      - name: deploy
+        run: yarn run deploy event
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

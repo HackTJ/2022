@@ -1,0 +1,87 @@
+.wrapper {
+  flex-direction: row;
+  display: flex;
+  width: min(70em, 80%);
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background: var(--theme-primary);
+  border-radius: 50px;
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 1em;
+}
+
+.categoryBubble {
+  position: relative;
+  list-style-type: none;
+  text-align: left;
+  font-size: 1.1rem;
+  padding: 1em;
+  transition: 0.1s ease-in-out;
+  color: #333;
+  opacity: 0.6;
+  outline: none; /* TODO: I don't like this */
+}
+.categoryBubble:hover,
+.categoryBubble:focus {
+  opacity: 0.9;
+}
+
+.selected {
+  position: relative;
+  font-size: 1.25rem;
+  font-weight: 600;
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.scheduleArea {
+  border: none;
+  border-collapse: separate;
+  padding: 0.5rem 0;
+  width: 100%;
+  margin: 0;
+  border-radius: 50px 0 0 50px;
+  box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 19px;
+}
+
+.scheduleArea thead {
+  visibility: collapse;
+}
+
+.event {
+  list-style: none;
+  min-width: 400px;
+  margin-bottom: 2.5%;
+  color: white;
+}
+
+.time {
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  width: fit-content;
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .dates {
+    flex-direction: row;
+    padding-left: 0;
+  }
+  .scheduleArea {
+    border-radius: 50px;
+  }
+}

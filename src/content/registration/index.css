@@ -1,0 +1,6 @@
+@media only screen and (max-width: 640px) {
+  section#register a.long-label {
+    line-height: 1em;
+    width: 90%;
+  }
+}
