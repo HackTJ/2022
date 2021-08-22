@@ -164,7 +164,7 @@ const data = [
       <span>
         Tickets decisisons are made based on a variety of factors, including the
         registration time. Sign up quickly to increase the chance that you are
-        given a HackTJ 8.0 ticket!
+        given a HackTJ 9.0 ticket!
       </span>
     ),
   },

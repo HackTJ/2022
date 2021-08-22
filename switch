@@ -5,7 +5,7 @@ if [ "$1" == "event" ]; then
 
   sed 's|<Routes>|<Routes basename="/2022">|' src/App.tsx > src/tmp.$$.tsx && mv src/tmp.$$.tsx src/App.tsx
 
-  meta_label="HackTJ 8.0"
+  meta_label="HackTJ 9.0"
 
   rm -f public/CNAME
   git remote set-url origin git@github.com:HackTJ/2022.git

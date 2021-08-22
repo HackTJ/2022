@@ -1,8 +1,8 @@
-# HackTJ 8.0
+# HackTJ 9.0
 
 [![lint](https://github.com/HackTJ/2022/workflows/lint/badge.svg?event=push)](https://github.com/HackTJ/2022/actions?query=workflow%3Alint)
 
-The website for HackTJ 8.0.
+The website for HackTJ 9.0.
 
 ## Setup
 
@@ -17,8 +17,8 @@ We use React.
 ```sh
 git clone git@github.com:HackTJ/2022.git 2022 && cd 2022/
 yarn install
-git reset "$(git commit-tree HEAD^"{tree}" -m "Push HackTJ 8.0 website" -m "$(yarn run git-history-coauthors)")"  # squash all commits into 1
-git remote set-url origin git@github.com:HackTJ/2022.git
+git reset "$(git commit-tree HEAD^"{tree}" -m "Push HackTJ 9.0 website" -m "$(yarn run git-history-coauthors)")"  # squash all commits into 1
+git remote set-url origin git@github.com:HackTJ/2023.git
 git push
 ```
 
