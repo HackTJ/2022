@@ -4,9 +4,9 @@ import DevpostCard from "./DevpostCard";
 
 import { CardDeck } from "reactstrap";
 
-import styles from "./content.module.css";
+import styles from "./history.module.css";
 
-// https://hacktj.org/2020/favicon.ico is too low-quality
+// after 2019, the favicons are too low-quality
 
 const HistoryPageContent: FunctionComponent<{}> = () => (
   <section className="centered-box relative">
@@ -14,11 +14,16 @@ const HistoryPageContent: FunctionComponent<{}> = () => (
     <h1 className="section-title">A Walk Through Memory Lane</h1>
     <CardDeck>
       <DevpostCard
+        logo="https://raw.githubusercontent.com/HackTJ/2021/master/src/images/logo.png"
+        iteration="8.0"
+        year="2021"
+        url="https://hacktj2021.devpost.com/"
+      />
+      <DevpostCard
         logo="https://raw.githubusercontent.com/HackTJ/2020/master/src/images/logo.png"
-        iteration="7.0"
+        iteration="7.5"
         year="2020"
         url="https://hacktj2020.devpost.com/"
-        disabled
       />
       <DevpostCard
         logo="https://hacktj.org/2019/img/logo2.png"
