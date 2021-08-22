@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const jimp = require("jimp");
 
-const tintColor = "#269999";
+const tintColor = "#ffd24a";
 
 const walkAndTint = async (rootImageDir) => {
   const normalDir = await fs.promises.opendir(
