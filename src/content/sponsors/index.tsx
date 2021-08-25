@@ -4,6 +4,13 @@ import Logo from "./Logo";
 
 import "./index.css";
 
+interface Organization {
+  name: string;
+  url: string;
+  logo: string;
+  key: string;
+}
+
 const Sponsors = () => (
   <>
     <a className="anchor" id="sponsor" href="#sponsor">
@@ -40,13 +47,7 @@ const Sponsors = () => (
         {/* Platinum Tier */}
         <h2 className="tier-title">PLATINUM</h2>
         <div className="partner-container">
-          {[
-            {
-              url: "https://eastbanctech.com",
-              logo: "eastbanc.png",
-              name: "EastBanc Technologies",
-            },
-          ].map((company) => (
+          {([] as Organization[]).map((company: Organization) => (
             <Logo
               name={company.name}
               url={company.url}
@@ -59,28 +60,7 @@ const Sponsors = () => (
         {/* Gold Tier */}
         <h2 className="tier-title">GOLD</h2>
         <div className="partner-container">
-          {[
-            {
-              url: "https://phone2action.com/",
-              logo: "phone2action.png",
-              name: "Phone2Action",
-            },
-            {
-              url: "https://lunchclub.com/",
-              logo: "lunchclub.png",
-              name: "Lunchclub",
-            },
-            {
-              url: "https://www.goarmy.com/rotc/ways-to-attend.html",
-              logo: "armyrotc.png",
-              name: "Army ROTC",
-            },
-            {
-              url: "https://replit.com/",
-              logo: "replit.png",
-              name: "Replit",
-            },
-          ].map((company) => (
+          {([] as Organization[]).map((company: Organization) => (
             <Logo
               name={company.name}
               url={company.url}
@@ -93,13 +73,7 @@ const Sponsors = () => (
         {/* Silver Tier */}
         <h2 className="tier-title">SILVER</h2>
         <div className="partner-container">
-          {[
-            {
-              url: "https://www.yext.com/",
-              logo: "yext.png",
-              name: "Yext",
-            },
-          ].map((company) => (
+          {([] as Organization[]).map((company: Organization) => (
             <Logo
               name={company.name}
               url={company.url}
@@ -112,18 +86,7 @@ const Sponsors = () => (
         {/* Bronze Tier */}
         <h2 className="tier-title">BRONZE</h2>
         <div className="partner-container">
-          {[
-            {
-              url: "https://www.cvent.com",
-              logo: "cvent.png",
-              name: "Cvent",
-            },
-            {
-              url: "https://tjptsa.com/",
-              logo: "tjptsa.png",
-              name: "TJ PTSA",
-            },
-          ].map((company) => (
+          {([] as Organization[]).map((company: Organization) => (
             <Logo
               name={company.name}
               url={company.url}
@@ -136,38 +99,7 @@ const Sponsors = () => (
         {/* Prize Tier */}
         <h2 className="tier-title">PRIZE</h2>
         <div className="partner-container">
-          {[
-            {
-              url: "https://www.inspiritai.com/",
-              logo: "inspiritai.png",
-              name: "Inspirit AI",
-            },
-            {
-              url: "https://www.hestia.academy/",
-              logo: "hestiaacademy.png",
-              name: "Hestia Academy",
-            },
-            {
-              url: "https://www.echoar.xyz/",
-              logo: "echoar.png",
-              name: "EchoAR",
-            },
-            {
-              url: "https://thecodex.me/",
-              logo: "thecodex.png",
-              name: "The Codex",
-            },
-            {
-              url: "https://www.volarelabs.io/",
-              logo: "volarelabs.png",
-              name: "Volare Labs",
-            },
-            {
-              url: "https://hackp.ac/mlh-stickermule-hackathons",
-              logo: "stickermule.png",
-              name: "Sticker Mule",
-            },
-          ].map((company) => (
+          {([] as Organization[]).map((company: Organization) => (
             <Logo
               name={company.name}
               url={company.url}
@@ -181,23 +113,7 @@ const Sponsors = () => (
         </p>
         <h1 className="section-title">Partners</h1>
         <div className="partner-container">
-          {[
-            {
-              url: "https://mlh.io",
-              logo: "mlh.png",
-              name: "Major League Hacking",
-            },
-            {
-              url: "https://www.tjpartnershipfund.org",
-              logo: "tjpartnershipfund.png",
-              name: "TJ Partnership Fund",
-            },
-            {
-              url: "https://www.brandmakers.com/",
-              logo: "brandmakers.png",
-              name: "Brand Makers",
-            },
-          ].map((partner) => (
+          {([] as Organization[]).map((partner: Organization) => (
             <Logo
               name={partner.name}
               url={partner.url}
