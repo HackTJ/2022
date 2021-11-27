@@ -8,7 +8,7 @@ import "./index.css";
 type Props = {
   name: string;
   image: string;
-  about: string;
+  about: string | JSX.Element;
 };
 
 const TeamPicture: FunctionComponent<Props> = ({

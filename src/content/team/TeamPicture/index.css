@@ -117,10 +117,6 @@ section.team li.question-group .answer p {
   margin: 16px;
 }
 
-section.team li.question-group .answer a {
-  color: #fff;
-}
-
 section.team .popup {
   position: relative;
   display: inline-block;
