@@ -78,10 +78,10 @@ const teamData = [
     image: "KrishnanShankar.JPG",
   },
   {
-    name: "Lindsay Huang",
+    name: "Lindsay Hwang",
     about:
       "Lindsay is a sophomore at TJ, and this is her first year on the HackTJ team after competing in HackTJ as a freshman. She is interested in CS and engineering, as well as math. In her free time, Lindsay enjoys running and takes part in both the TJ track and cross country teams. Outside of running, she also likes to cook, binge TV shows, and bike.",
-    image: "LindsayHuang.JPG",
+    image: "LindsayHwang.JPG",
   },
   {
     name: "Vidhi Sharma",
