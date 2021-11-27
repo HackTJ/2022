@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/2022/static/css/main.beda1403.chunk.css",
-    "main.js": "/2022/static/js/main.f344306c.chunk.js",
-    "main.js.map": "/2022/static/js/main.f344306c.chunk.js.map",
+    "main.js": "/2022/static/js/main.43c4c0dd.chunk.js",
+    "main.js.map": "/2022/static/js/main.43c4c0dd.chunk.js.map",
     "runtime-main.js": "/2022/static/js/runtime-main.655486c0.js",
     "runtime-main.js.map": "/2022/static/js/runtime-main.655486c0.js.map",
-    "static/js/2.b76b2c0e.chunk.js": "/2022/static/js/2.b76b2c0e.chunk.js",
-    "static/js/2.b76b2c0e.chunk.js.map": "/2022/static/js/2.b76b2c0e.chunk.js.map",
+    "static/js/2.7aba9de9.chunk.js": "/2022/static/js/2.7aba9de9.chunk.js",
+    "static/js/2.7aba9de9.chunk.js.map": "/2022/static/js/2.7aba9de9.chunk.js.map",
     "index.html": "/2022/index.html",
     "static/css/main.beda1403.chunk.css.map": "/2022/static/css/main.beda1403.chunk.css.map",
-    "static/js/2.b76b2c0e.chunk.js.LICENSE.txt": "/2022/static/js/2.b76b2c0e.chunk.js.LICENSE.txt",
+    "static/js/2.7aba9de9.chunk.js.LICENSE.txt": "/2022/static/js/2.7aba9de9.chunk.js.LICENSE.txt",
     "static/media/AnanyaPamal.JPG": "/2022/static/media/AnanyaPamal.cd0ccf35.JPG",
     "static/media/AnikaKarpurapu.JPG": "/2022/static/media/AnikaKarpurapu.c9b4da26.JPG",
     "static/media/ArjunJagannathan.JPG": "/2022/static/media/ArjunJagannathan.95137f12.JPG",
@@ -49,8 +49,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.655486c0.js",
-    "static/js/2.b76b2c0e.chunk.js",
+    "static/js/2.7aba9de9.chunk.js",
     "static/css/main.beda1403.chunk.css",
-    "static/js/main.f344306c.chunk.js"
+    "static/js/main.43c4c0dd.chunk.js"
   ]
 }
