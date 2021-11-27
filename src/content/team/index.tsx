@@ -7,8 +7,18 @@ import "./index.css";
 const teamData = [
   {
     name: "Sumanth Ratna",
-    about:
-      "Sumanth is a senior at TJ and has been on the HackTJ team since the end of his freshman year. He is the Director of Technology of HackTJ and he leads judging. Outside of HackTJ, he works on <a href=”https://eabsentee.org/”>eAbsentee</a>, is the Co-Captain of TJ Ethics Bowl, and is the President of Innovations in Concepts of Engineering, among other activities. While he loves to work on civic technology and computational biology projects, he also enjoys playing sports with his friends and listening to music.",
+    about: (
+      <span>
+        Sumanth is a senior at TJ and has been on the HackTJ team since the end
+        of his freshman year. He is the Director of Technology of HackTJ and he
+        leads judging. Outside of HackTJ, he works on{" "}
+        <a href="https://eabsentee.org/">eAbsentee</a>, is the Co-Captain of TJ
+        Ethics Bowl, and is the President of Innovations in Concepts of
+        Engineering, among other activities. While he loves to work on civic
+        technology and computational biology projects, he also enjoys playing
+        sports with his friends and listening to music.
+      </span>
+    ),
     image: "SumanthRatna.JPG",
   },
   {
