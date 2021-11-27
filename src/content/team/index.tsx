@@ -6,6 +6,18 @@ import "./index.css";
 
 const teamData = [
   {
+    name: "Pranav Mathur",
+    about:
+      "Pranav is the Director of HackTJ 9.0. He’s a senior at TJHSST and this is his third year organizing HackTJ after competing his freshman year. Pranav loves spreading his passion for computer science and mathematics, serving as officer of both TJ’s Senior Computing Team and Varsity Math Team. He is also interested in physics and economics and enjoys applying CS to solve problems in these fields. In his free time, Pranav likes to dance with TJ Namaste, play tennis, and play piano.",
+    image: "PranavMathur.JPG",
+  },
+  {
+    name: "Shreya Singh",
+    about:
+      "Shreya is a senior at TJ and is the Assistant Director of HackTJ 9.0. She joined the HackTJ team after her sophomore year, and really looks forward to planning this year’s HackTJ! She is interested in CS and chemistry and serves as the Vice President of Coding Lady Colonials. Shreya also enjoys running in her freetime and is a part of TJ’s cross country and track teams. Outside of school, she enjoys playing the piano, attempting to bake, and watching TV.",
+    image: "ShreyaSingh.JPG",
+  },
+  {
     name: "Sumanth Ratna",
     about: (
       <span>
@@ -22,6 +34,18 @@ const teamData = [
     image: "SumanthRatna.JPG",
   },
   {
+    name: "Shreyas Mayya",
+    about:
+      "Shreyas, a senior at TJ, is in his second year on the HackTJ team and excited for this year’s HackTJ! He’s in charge of the HackTJ Devpost and also works on internet/tech, merch/branding, and judging. Shreyas is interested in understanding and creating complex systems, both with and without computers included. Outside of HackTJ, he’s a Science Olympiad co-captain, a lead Student Sysadmin, and involved with TJ’s band program and Latin Honor Society, and in his free time, Shreyas enjoys playing woodwind instruments, playing badminton, and diving down random internet rabbit holes.",
+    image: "ShreyasMayya.JPG",
+  },
+  {
+    name: "Samhita Vinay",
+    about:
+      "Samhita is a senior at TJHSST and is one of the mentors and publicity coordinators at HackTJ. She became a part of the HackTJ team after attending HackTJ in her freshman year, and enjoyed the experience since she is passionate about biology and computer science and the parallels between the two fields. Samhita is also one of the captains of the TJ Science Olympiad Team, and enjoys participating in competitions across the country. In her free time, she enjoys dancing and spending time with her family.",
+    image: "SamhitaVinay.JPG",
+  },
+  {
     name: "Anika Karpurapu",
     about:
       "Anika is a senior at TJ and works on internet/tech, merch/branding, and sponsorships. She attended HackTJ her freshman year, had an amazing time, and now this is her second year on the organizing team. To pursue her interests, Anika serves as the Co-President of CyberPatriot, the Chemistry President of Women Interested in Science and Engineering (WISE), and is part of the TJ Latin cult. In her free time, you can find her running, playing with her puppy, or baking.",
@@ -32,30 +56,6 @@ const teamData = [
     about:
       "Arjun is a senior at TJ and leads sponsorship outreach, helps organize workshops, and arranges guest speaker panels. He is in his second year on the organizing team. Arjun is passionate about business, specifically finance, and aims to explore the intersection between finance and computer science. He currently serves as the President of the Investment Club, the Vice President of the Consulting Club, and participates in other business-oriented extracurriculars. Arjun loves to play basketball and soccer, listen to music, and trade stocks in his free time.",
     image: "ArjunJagannathan.JPG",
-  },
-  {
-    name: "Pranav Mathur",
-    about:
-      "Pranav is the Director of HackTJ 9.0. He’s a senior at TJHSST and this is his third year organizing HackTJ after competing his freshman year. Pranav loves spreading his passion for computer science and mathematics, serving as officer of both TJ’s Senior Computing Team and Varsity Math Team. He is also interested in physics and economics and enjoys applying CS to solve problems in these fields. In his free time, Pranav likes to dance with TJ Namaste, play tennis, and play piano.",
-    image: "PranavMathur.JPG",
-  },
-  {
-    name: "Samhita Vinay",
-    about:
-      "Samhita is a senior at TJHSST and is one of the mentors and publicity coordinators at HackTJ. She became a part of the HackTJ team after attending HackTJ in her freshman year, and enjoyed the experience since she is passionate about biology and computer science and the parallels between the two fields. Samhita is also one of the captains of the TJ Science Olympiad Team, and enjoys participating in competitions across the country. In her free time, she enjoys dancing and spending time with her family.",
-    image: "SamhitaVinay.JPG",
-  },
-  {
-    name: "Shreya Singh",
-    about:
-      "Shreya is a senior at TJ and is the Assistant Director of HackTJ 9.0. She joined the HackTJ team after her sophomore year, and really looks forward to planning this year’s HackTJ! She is interested in CS and chemistry and serves as the Vice President of Coding Lady Colonials. Shreya also enjoys running in her freetime and is a part of TJ’s cross country and track teams. Outside of school, she enjoys playing the piano, attempting to bake, and watching TV.",
-    image: "ShreyaSingh.JPG",
-  },
-  {
-    name: "Shreyas Mayya",
-    about:
-      "Shreyas, a senior at TJ, is in his second year on the HackTJ team and excited for this year’s HackTJ! He’s in charge of the HackTJ Devpost and also works on internet/tech, merch/branding, and judging. Shreyas is interested in understanding and creating complex systems, both with and without computers included. Outside of HackTJ, he’s a Science Olympiad co-captain, a lead Student Sysadmin, and involved with TJ’s band program and Latin Honor Society, and in his free time, Shreyas enjoys playing woodwind instruments, playing badminton, and diving down random internet rabbit holes.",
-    image: "ShreyasMayya.JPG",
   },
   {
     name: "Autin Mitra",
