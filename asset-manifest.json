@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/2022/static/css/main.beda1403.chunk.css",
-    "main.js": "/2022/static/js/main.43c4c0dd.chunk.js",
-    "main.js.map": "/2022/static/js/main.43c4c0dd.chunk.js.map",
+    "main.js": "/2022/static/js/main.2be33bee.chunk.js",
+    "main.js.map": "/2022/static/js/main.2be33bee.chunk.js.map",
     "runtime-main.js": "/2022/static/js/runtime-main.655486c0.js",
     "runtime-main.js.map": "/2022/static/js/runtime-main.655486c0.js.map",
     "static/js/2.7aba9de9.chunk.js": "/2022/static/js/2.7aba9de9.chunk.js",
@@ -17,7 +17,7 @@
     "static/media/index.css": "/2022/static/media/pe-icon-social.8846062f.svg",
     "static/media/KrishnanShankar.JPG": "/2022/static/media/KrishnanShankar.15ffd90b.JPG",
     "static/media/LindsayHwang.JPG": "/2022/static/media/LindsayHwang.b3f11093.JPG",
-    "static/media/MsRazzino.JPG": "/2022/static/media/MsRazzino.097cf58e.JPG",
+    "static/media/MsRazzino.JPG": "/2022/static/media/MsRazzino.cd5a9739.JPG",
     "static/media/PranavMathur.JPG": "/2022/static/media/PranavMathur.8c4edc78.JPG",
     "static/media/SamhitaVinay.JPG": "/2022/static/media/SamhitaVinay.70695468.JPG",
     "static/media/ShreyaSingh.JPG": "/2022/static/media/ShreyaSingh.03be0b64.JPG",
@@ -51,6 +51,6 @@
     "static/js/runtime-main.655486c0.js",
     "static/js/2.7aba9de9.chunk.js",
     "static/css/main.beda1403.chunk.css",
-    "static/js/main.43c4c0dd.chunk.js"
+    "static/js/main.2be33bee.chunk.js"
   ]
 }
