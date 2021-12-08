@@ -44,19 +44,6 @@ const Sponsors = () => (
         ></div> */}
         <h1 className="section-title">Sponsors</h1>
 
-        {/* Platinum Tier */}
-        <h2 className="tier-title">PLATINUM</h2>
-        <div className="partner-container">
-          {([] as Organization[]).map((company: Organization) => (
-            <Logo
-              name={company.name}
-              url={company.url}
-              logo={company.logo}
-              key={company.name}
-            />
-          ))}
-        </div>
-
         {/* Gold Tier */}
         <h2 className="tier-title">GOLD</h2>
         <div className="partner-container">
@@ -86,7 +73,15 @@ const Sponsors = () => (
         {/* Bronze Tier */}
         <h2 className="tier-title">BRONZE</h2>
         <div className="partner-container">
-          {([] as Organization[]).map((company: Organization) => (
+          {(
+            [
+              {
+                url: "https://www.collinsaerospace.com/",
+                logo: "collinsaerospace.png",
+                name: "Collins Aerospace",
+              },
+            ] as Organization[]
+          ).map((company: Organization) => (
             <Logo
               name={company.name}
               url={company.url}
