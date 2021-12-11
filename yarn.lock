@@ -3007,10 +3007,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:^4.14.177":
-  version: 4.14.177
-  resolution: "@types/lodash@npm:4.14.177"
-  checksum: 00f9eb300ed5219cfbabb3448d4a71744895edad60dcfda9f028c0808a50eb6ad1ca9f673b56a85f85668a4ea54b9870643625468a747039c435643e52253a75
+"@types/lodash@npm:^4.14.178":
+  version: 4.14.178
+  resolution: "@types/lodash@npm:4.14.178"
+  checksum: a69a04a60bfc5257c3130a554b4efa0c383f0141b7b3db8ab7cf07ad2a46ea085fce66d0242da41da7e5647b133d5dfb2c15add9cbed8d7fef955e4a1e5b3128
   languageName: node
   linkType: hard
 
@@ -8918,7 +8918,7 @@ fsevents@^1.2.7:
     "@types/aria-query": ^5.0.0
     "@types/chart.js": ^2.9.34
     "@types/jest": ^27.0.3
-    "@types/lodash": ^4.14.177
+    "@types/lodash": ^4.14.178
     "@types/node": ^16.11.12
     "@types/preval.macro": ^3.0.0
     "@types/react": ^17.0.37
@@ -8953,13 +8953,13 @@ fsevents@^1.2.7:
     react-helmet-async: ^1.2.2
     react-map-gl: ^6.1.18
     react-parallax-tilt: ^1.5.82
-    react-router-dom: ^6.0.2
+    react-router-dom: ^6.1.0
     react-scripts: ^4.0.3
     react-snap: ^1.23.0
     reactstrap: ^9.0.1
     serve: ^13.0.2
     source-map-explorer: ^2.5.2
-    typescript: 4.5.2
+    typescript: 4.5.3
     web-vitals: ^2.1.2
   languageName: unknown
   linkType: soft
@@ -14766,27 +14766,27 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-router-dom@npm:^6.0.2":
-  version: 6.0.2
-  resolution: "react-router-dom@npm:6.0.2"
+"react-router-dom@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "react-router-dom@npm:6.1.0"
   dependencies:
     history: ^5.1.0
-    react-router: 6.0.2
+    react-router: 6.1.0
   peerDependencies:
     react: ">=16.8"
     react-dom: ">=16.8"
-  checksum: d3680939a4fac286f8df028c1fabe5626567ba065b2029b1cc4ad64fe9444aeba186d0e5e765563fc36ea868e7d17e02fb098f2ebc0b1c70212a8470a4b58ad6
+  checksum: a3429b0cc7bd6aab31162e4704d7ee1185c20f05b68ea66bc7129dec1ac73fa348a81c2fea8c7db3ba6ac85cded277243da87c228ba753db2aa1a8bc82b58e21
   languageName: node
   linkType: hard
 
-"react-router@npm:6.0.2":
-  version: 6.0.2
-  resolution: "react-router@npm:6.0.2"
+"react-router@npm:6.1.0":
+  version: 6.1.0
+  resolution: "react-router@npm:6.1.0"
   dependencies:
     history: ^5.1.0
   peerDependencies:
     react: ">=16.8"
-  checksum: 9d4f3a8002a90f38be022c6740e11e9bb481e60ad04c5a0ce2d6dbe685059c09b3037c45414d6e7e40eb97308842380413cfb93c5cdcb992e7ee0c50b4f7fcaa
+  checksum: dec90aaaf1d8be71312f9c817ade28e2cc82a479e60c099872e27d9d14a78f4ed6f2d09c6cc91330667695ed53ab097deb4e0cfb07f47d8cdefc1839a773b887
   languageName: node
   linkType: hard
 
@@ -17404,23 +17404,23 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"typescript@npm:4.5.2":
-  version: 4.5.2
-  resolution: "typescript@npm:4.5.2"
+"typescript@npm:4.5.3":
+  version: 4.5.3
+  resolution: "typescript@npm:4.5.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 74f9ce65d532bdf5d0214b3f60cf37992180023388c87a11ee6f838a803067ef0b63c600fa501b0deb07f989257dce1e244c9635ed79feca40bbccf6e0aa1ebc
+  checksum: 2ac278c20418882816789ad94a5d9e7f11969db7a2a23fa09e61f2fedf3814265cbd4f89d7f5b6e1f0e7be2b5f169becf5dab913d0da255b073ea3c8c324e6d4
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.5.2#~builtin<compat/typescript>":
-  version: 4.5.2
-  resolution: "typescript@patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=493e53"
+"typescript@patch:typescript@4.5.3#~builtin<compat/typescript>":
+  version: 4.5.3
+  resolution: "typescript@patch:typescript@npm%3A4.5.3#~builtin<compat/typescript>::version=4.5.3&hash=493e53"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 53838d56aba6fcc947d63aa0771e5d966b1b648fddafed6e221d7f38c71219c4e036ece8cfe9e35ed80cf5a35ff4eb958934c993f99c3233773ec4f9ccd53f69
+  checksum: 3c3a664dfb66e7c45d3823cc1a4038dc506415041f39249ed3af1799a64b3065448549d9e9ba509c94335d1e2dfbe311a4b9e36574e87d248f9381d541cb8626
   languageName: node
   linkType: hard
 

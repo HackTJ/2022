@@ -1,5 +1,5 @@
 import SocialLinks from "./SocialLinks";
-import MLHTrustBadge from "./MLHTrustBadge";
+// import MLHTrustBadge from "./MLHTrustBadge";
 
 import styles from "./footer.module.css";
 
@@ -13,7 +13,7 @@ const Footer = () => (
         <SocialLinks />
       </div>
     </footer>
-    <MLHTrustBadge />
+    {/* <MLHTrustBadge /> */}
   </>
 );
 
