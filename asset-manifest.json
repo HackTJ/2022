@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/2022/static/css/main.beda1403.chunk.css",
-    "main.js": "/2022/static/js/main.e3ad201b.chunk.js",
-    "main.js.map": "/2022/static/js/main.e3ad201b.chunk.js.map",
+    "main.js": "/2022/static/js/main.5a293d03.chunk.js",
+    "main.js.map": "/2022/static/js/main.5a293d03.chunk.js.map",
     "runtime-main.js": "/2022/static/js/runtime-main.655486c0.js",
     "runtime-main.js.map": "/2022/static/js/runtime-main.655486c0.js.map",
     "static/js/2.c6d1b1a3.chunk.js": "/2022/static/js/2.c6d1b1a3.chunk.js",
@@ -27,7 +27,7 @@
     "static/media/TaeinKim.JPG": "/2022/static/media/TaeinKim.e7a6b975.JPG",
     "static/media/VidhiSharma.JPG": "/2022/static/media/VidhiSharma.b029848a.JPG",
     "static/media/armyrotc.png": "/2022/static/media/armyrotc.9ee17dfe.png",
-    "static/media/bigweblogo.5e8be410.svg": "/2022/static/media/bigweblogo.5e8be410.svg",
+    "static/media/bigweblogo.58bf55fa.svg": "/2022/static/media/bigweblogo.58bf55fa.svg",
     "static/media/brandmakers.png": "/2022/static/media/brandmakers.e7b26d38.png",
     "static/media/collinsaerospace.png": "/2022/static/media/collinsaerospace.c0edf749.png",
     "static/media/eastbanc.png": "/2022/static/media/eastbanc.1a9373cf.png",
@@ -50,6 +50,6 @@
     "static/js/runtime-main.655486c0.js",
     "static/js/2.c6d1b1a3.chunk.js",
     "static/css/main.beda1403.chunk.css",
-    "static/js/main.e3ad201b.chunk.js"
+    "static/js/main.5a293d03.chunk.js"
   ]
 }
