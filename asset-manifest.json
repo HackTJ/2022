@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/2022/static/css/main.beda1403.chunk.css",
-    "main.js": "/2022/static/js/main.5a293d03.chunk.js",
-    "main.js.map": "/2022/static/js/main.5a293d03.chunk.js.map",
+    "main.js": "/2022/static/js/main.ab4235a9.chunk.js",
+    "main.js.map": "/2022/static/js/main.ab4235a9.chunk.js.map",
     "runtime-main.js": "/2022/static/js/runtime-main.655486c0.js",
     "runtime-main.js.map": "/2022/static/js/runtime-main.655486c0.js.map",
-    "static/js/2.c6d1b1a3.chunk.js": "/2022/static/js/2.c6d1b1a3.chunk.js",
-    "static/js/2.c6d1b1a3.chunk.js.map": "/2022/static/js/2.c6d1b1a3.chunk.js.map",
+    "static/js/2.2a96bce5.chunk.js": "/2022/static/js/2.2a96bce5.chunk.js",
+    "static/js/2.2a96bce5.chunk.js.map": "/2022/static/js/2.2a96bce5.chunk.js.map",
     "index.html": "/2022/index.html",
     "static/css/main.beda1403.chunk.css.map": "/2022/static/css/main.beda1403.chunk.css.map",
-    "static/js/2.c6d1b1a3.chunk.js.LICENSE.txt": "/2022/static/js/2.c6d1b1a3.chunk.js.LICENSE.txt",
+    "static/js/2.2a96bce5.chunk.js.LICENSE.txt": "/2022/static/js/2.2a96bce5.chunk.js.LICENSE.txt",
     "static/media/AnanyaPamal.JPG": "/2022/static/media/AnanyaPamal.cd0ccf35.JPG",
     "static/media/AnikaKarpurapu.JPG": "/2022/static/media/AnikaKarpurapu.c9b4da26.JPG",
     "static/media/ArjunJagannathan.JPG": "/2022/static/media/ArjunJagannathan.95137f12.JPG",
@@ -30,7 +30,7 @@
     "static/media/bigweblogo.58bf55fa.svg": "/2022/static/media/bigweblogo.58bf55fa.svg",
     "static/media/brandmakers.png": "/2022/static/media/brandmakers.e7b26d38.png",
     "static/media/collinsaerospace.png": "/2022/static/media/collinsaerospace.c0edf749.png",
-    "static/media/eastbanc.png": "/2022/static/media/eastbanc.1a9373cf.png",
+    "static/media/eastbanc.png": "/2022/static/media/eastbanc.dc94f87c.png",
     "static/media/hestiaacademy.png": "/2022/static/media/hestiaacademy.5a7d6bb0.png",
     "static/media/inspiritai.png": "/2022/static/media/inspiritai.6307b820.png",
     "static/media/lunchclub.png": "/2022/static/media/lunchclub.2ddcaa33.png",
@@ -48,8 +48,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.655486c0.js",
-    "static/js/2.c6d1b1a3.chunk.js",
+    "static/js/2.2a96bce5.chunk.js",
     "static/css/main.beda1403.chunk.css",
-    "static/js/main.5a293d03.chunk.js"
+    "static/js/main.ab4235a9.chunk.js"
   ]
 }
