@@ -93,7 +93,10 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: ['"Red Hat Display"', ...defaultTheme.fontFamily.sans]
-			}
+			},
+			height: {
+        '128': '32rem',
+      }
 		}
 	},
 	plugins: []
