@@ -8,10 +8,11 @@
 		<li><a href="/location" class="hover:text-theme">Location</a></li>
 	</ul>
 </nav>
-<div class="h-[calc(100vh_-_8rem)]">
+<div class="h-[calc(100vh_-_8rem)] min-h-[512px]">
 	<div class="flex justify-start lg:justify-around items-center mt-18 px-8 md:px-12 h-[calc(100%_-_8rem)]">
 		<div class="flex flex-col">
 			<!-- TODO: Add TJ Dome on top of HackTJ branding for small screens -->
+			<img alt="TJHSST Dome" src="dome.svg"  class="block lg:hidden mb-3 w-24 h-24" />
 			<div class="text-white font-bold text-6xl md:text-8xl">
 				HackTJ
 				<!-- TODO: `Overpass Mono`: -->
@@ -37,9 +38,7 @@
 				>
 			</div>
 		</div>
-		<div class="hidden lg:flex self-end max-h-full object-cover">
-			<img src="dome.svg" />
-		</div>
+			<img alt="TJHSST Dome" src="dome.svg"  class="hidden lg:flex self-end max-h-full" />
 	</div>
 	<div class="w-full absolute bottom-0 lg:w-auto lg:relative">
 		<svg class="-mt-1 mb-2 md:mb-6" viewBox="0 0 1440 61" fill="none" xmlns="http://www.w3.org/2000/svg">
