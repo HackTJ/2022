@@ -1,3 +1,30 @@
+<script>
+import AboutCard from "../components/AboutCard.svelte";
+import SponsorsReel from "../components/SponsorsReel.svelte";
+
+// Sponsorship Tiers Code
+const goldTierData = {
+	title: 'GOLD TIER',
+	bg: 'bg-[#D6B570]',
+	cards: [{src: '/sponsorlogos/eastbanc.png', alt: 'East Banc Sponsor Logo'}]
+}
+
+const silverTierData = {
+	title: 'SILVER TIER',
+	bg: 'bg-[#C9D4E5]',
+	cards: [{src: '/sponsorlogos/eastbanc.png', alt: 'East Banc Sponsor Logo'}]
+}
+
+const bronzeTierData = {
+	title: 'BRONZE TIER',
+	bg: 'bg-[#AF7A6D]',
+	cards: [{src: '/sponsorlogos/eastbanc.png', alt: 'East Banc Sponsor Logo'}]
+}
+
+const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
+</script>
+
+<!-- Intro Section -->
 <nav class="h-24 px-8 md:px-12 py-8 flex text-white text-lg font-black">
 	<!-- TODO: Mobile dropdown -->
 	<ul class="flex items-center ml-auto space-x-8">
@@ -26,14 +53,14 @@
 					href="/register"
 					target="_blank"
 					rel="noopener noreferred"
-					class="block text-center py-3 bg-theme text-blueberry-800 text-xl font-black rounded-2xl"
+					class="block text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl"
 					>Register</a
 				>
 				<a
 					href="/schedule"
 					target="_blank"
 					rel="noopener noreferred"
-					class="block mt-2 text-center py-3 bg-spruce-100 text-blueberry-800 text-xl font-black rounded-2xl"
+					class="block mt-2 text-center py-3 bg-spruce-100 text-blueberry-800 text-xl font-bold rounded-2xl"
 					>Schedule</a
 				>
 			</div>
@@ -57,8 +84,77 @@
 	</div>
 </div>
 
-<section class="mt-6 p-8 md:p-12">
-	<h1 class="text-blueberry-200 text-4xl md:text-6xl font-black">
+<!-- About Section -->
+<section class="mt-6 p-8 md:p-12 text-blueberry-200">
+	<h1 class="text-4xl md:text-6xl lg:text-7xl font-black">
 		Welcome to the Future Generation of <span class="text-theme">Coders</span>
 	</h1>
+	<div class="flex flex-col lg:flex-row mt-4 whitespace-pre-wrap text-lg">
+		<p class="mr-0 lg:mr-4">
+			HackTJ is a lorem ipsum dolor sit amet, consectetur 24 hours, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex teams of 4 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+
+			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt build in 3 different prize tracks anim id est laborum
+		</p>
+		<p class="mr-0 mt-8 lg:mt-0 lg:mr-4">
+			HackTJ is a lorem ipsum dolor sit amet, consectetur 24 hours, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex teams of 4 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+
+			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt build in 3 different prize tracks anim id est laborum
+		</p>
+	</div>
+	<div class="flex flex-row mt-6">
+		<a
+				href="/faq"
+				target="_blank"
+				rel="noopener noreferred"
+				class="block text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl px-8 mr-3"
+				>FAQ</a
+			>
+			<a
+				href="/beginnerresources"
+				target="_blank"
+				rel="noopener noreferred"
+				class="block text-center py-3 bg-spruce-200 text-blueberry-800 text-xl font-bold rounded-2xl px-8"
+				>Beginner Resources</a
+			>
+	</div>
+	<div class="flex flex-col lg:flex-row mt-12 w-full">
+		<div class="flex flex-col w-full h-full mr-0 lg:mr-3">
+			<AboutCard title={"Education"} class="mb-3" bg="bg-spruce-200">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper elementum sapien ut imperdiet. Vivamus eu risus a nunc vestibulum mollis. Nulla ac tincidunt mi, ut mollis arcu. Sed congue sagittis bibendum. Donec leo nibh, sagittis at mauris ut, egestas porta eros. Fusce purus risus, tristique rhoncus metus vel, scelerisque condimentum ex. Etiam malesuada leo eget erat ornare, eu malesuada arcu aliquam. In hac habitasse platea dictumst. Nulla laoreet, ex sit amet efficitur egestas, est orci laoreet massa, at viverra turpis elit vitae mauris. Praesent eleifend nibh eget est elementum, id vestibulum urna vestibulum.
+			</AboutCard>
+			<AboutCard title={"Hardware"} class="mt-3" bg="bg-white">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper elementum sapien ut imperdiet. Vivamus eu risus a nunc vestibulum mollis. Nulla ac tincidunt mi, ut mollis arcu. Sed congue sagittis bibendum. Donec leo nibh, sagittis at mauris ut, egestas porta eros. Fusce purus risus, tristique rhoncus metus vel, scelerisque condimentum ex. Etiam malesuada leo eget erat ornare, eu malesuada arcu aliquam. In hac habitasse platea dictumst. Nulla laoreet, ex sit amet efficitur egestas, est orci laoreet massa, at viverra turpis elit vitae mauris. Praesent eleifend nibh eget est elementum, id vestibulum urna vestibulum.
+			</AboutCard>
+		</div>
+		<div class="flex flex-col w-full h-full mr-0 mt-6 lg:ml-3 lg:mt-0">
+			<AboutCard title={"Health"} class="mb-3" bg="bg-strawberry-200">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper elementum sapien ut imperdiet. Vivamus eu risus a nunc vestibulum mollis. Nulla ac tincidunt mi, ut mollis arcu. Sed congue sagittis bibendum. Donec leo nibh, sagittis at mauris ut, egestas porta eros. Fusce purus risus, tristique rhoncus metus vel, scelerisque condimentum ex. Etiam malesuada leo eget erat ornare, eu malesuada arcu aliquam. In hac habitasse platea dictumst. Nulla laoreet, ex sit amet efficitur egestas, est orci laoreet massa, at viverra turpis elit vitae mauris. Praesent eleifend nibh eget est elementum, id vestibulum urna vestibulum.
+			</AboutCard>
+			<AboutCard title={"Other"} class="mt-3">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper elementum sapien ut imperdiet. Vivamus eu risus a nunc vestibulum mollis. Nulla ac tincidunt mi, ut mollis arcu. Sed congue sagittis bibendum. Donec leo nibh, sagittis at mauris ut, egestas porta eros. Fusce purus risus, tristique rhoncus metus vel, scelerisque condimentum ex. Etiam malesuada leo eget erat ornare, eu malesuada arcu aliquam. In hac habitasse platea dictumst. Nulla laoreet, ex sit amet efficitur egestas, est orci laoreet massa, at viverra turpis elit vitae mauris. Praesent eleifend nibh eget est elementum, id vestibulum urna vestibulum.
+			</AboutCard>
+		</div>
+	</div>
+</section>
+
+<!-- Sponsors Reel -->
+<section class="mt-6 text-blueberry-200">
+	<div class="p-8 md:p-12">
+		<h1 class="text-4xl md:text-6xl font-black text-white">Sponsors</h1>
+		<h3 class="mt-2 text-xl md:text-2xl font-bold text-blueberry-200">It wouldn't have been possible without these guys</h3>
+	</div>
+	<div class="mt-0">
+		{#each tierSectionData as section}
+			<SponsorsReel bg={section.bg} cardsData={section.cards} title={section.title}/>
+		{/each}
+	</div>
+</section>
+
+<section class="mt-6 text-blueberry-200 p-8 md:p-12">
+	<h1 class="text-4xl md:text-6xl font-black text-white">Meet The Team</h1>
+	<h3 class="mt-2 text-xl md:text-2xl font-bold text-blueberry-200">Hello, us!</h3>
 </section>
