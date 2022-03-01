@@ -156,7 +156,7 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 <section class="mt-6 text-blueberry-200 p-8 md:p-12">
 	<h1 class="text-4xl md:text-6xl font-black text-white">Meet The Team</h1>
 	<h3 class="mt-2 text-xl md:text-2xl font-bold text-blueberry-200">Hello, us!</h3>
-	<div class="flex flex-wrap gap-8 mt-8">
+	<div class="flex flex-wrap gap-8 mt-8 m-auto justify-center md:justify-start">
 		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />
 		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />
 		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />

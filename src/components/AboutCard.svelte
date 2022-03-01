@@ -1,7 +1,7 @@
 <script>
   export let title;
   export let bg = "bg-blueberry-200";
-  let classNames;
+  let classNames = "";
   export  { classNames as class }
 </script>
 

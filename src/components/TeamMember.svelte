@@ -1,7 +1,7 @@
 <script>
   export let name;
   export let photoSrc;
-  let classNames;
+  let classNames = "";
   export  { classNames as class }
 </script>
 
