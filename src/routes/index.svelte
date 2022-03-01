@@ -1,4 +1,5 @@
 <script>
+import TeamMember from "../components/TeamMember.svelte";
 import AboutCard from "../components/AboutCard.svelte";
 import SponsorsReel from "../components/SponsorsReel.svelte";
 
@@ -85,19 +86,19 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 </div>
 
 <!-- About Section -->
-<section class="mt-6 p-8 md:p-12 text-blueberry-200">
+<section class="mt-8 p-8 md:p-12 text-blueberry-200">
 	<h1 class="text-4xl md:text-6xl lg:text-7xl font-black">
 		Welcome to the Future Generation of <span class="text-theme">Coders</span>
 	</h1>
-	<div class="flex flex-col lg:flex-row mt-4 whitespace-pre-wrap text-lg">
-		<p class="mr-0 lg:mr-4">
+	<div class="flex flex-col lg:flex-row mt-4 whitespace-pre-wrap text-lg space-y-8 lg:space-y-0 lg:space-x-8">
+		<p>
 			HackTJ is a lorem ipsum dolor sit amet, consectetur 24 hours, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
 			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex teams of 4 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 
 			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt build in 3 different prize tracks anim id est laborum
 		</p>
-		<p class="mr-0 mt-8 lg:mt-0 lg:mr-4">
+		<p>
 			HackTJ is a lorem ipsum dolor sit amet, consectetur 24 hours, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
 			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex teams of 4 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
@@ -121,20 +122,20 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 				>Beginner Resources</a
 			>
 	</div>
-	<div class="flex flex-col lg:flex-row mt-12 w-full">
-		<div class="flex flex-col w-full h-full mr-0 lg:mr-3">
-			<AboutCard title={"Education"} class="mb-3" bg="bg-spruce-200">
+	<div class="flex flex-col lg:flex-row mt-12 w-full space-y-6 lg:space-x-6 lg:space-y-0">
+		<div class="flex flex-col w-full h-full space-y-6">
+			<AboutCard title={"Education"} bg="bg-spruce-200">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper elementum sapien ut imperdiet. Vivamus eu risus a nunc vestibulum mollis. Nulla ac tincidunt mi, ut mollis arcu. Sed congue sagittis bibendum. Donec leo nibh, sagittis at mauris ut, egestas porta eros. Fusce purus risus, tristique rhoncus metus vel, scelerisque condimentum ex. Etiam malesuada leo eget erat ornare, eu malesuada arcu aliquam. In hac habitasse platea dictumst. Nulla laoreet, ex sit amet efficitur egestas, est orci laoreet massa, at viverra turpis elit vitae mauris. Praesent eleifend nibh eget est elementum, id vestibulum urna vestibulum.
 			</AboutCard>
-			<AboutCard title={"Hardware"} class="mt-3" bg="bg-white">
+			<AboutCard title={"Hardware"} bg="bg-white">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper elementum sapien ut imperdiet. Vivamus eu risus a nunc vestibulum mollis. Nulla ac tincidunt mi, ut mollis arcu. Sed congue sagittis bibendum. Donec leo nibh, sagittis at mauris ut, egestas porta eros. Fusce purus risus, tristique rhoncus metus vel, scelerisque condimentum ex. Etiam malesuada leo eget erat ornare, eu malesuada arcu aliquam. In hac habitasse platea dictumst. Nulla laoreet, ex sit amet efficitur egestas, est orci laoreet massa, at viverra turpis elit vitae mauris. Praesent eleifend nibh eget est elementum, id vestibulum urna vestibulum.
 			</AboutCard>
 		</div>
-		<div class="flex flex-col w-full h-full mr-0 mt-6 lg:ml-3 lg:mt-0">
-			<AboutCard title={"Health"} class="mb-3" bg="bg-strawberry-200">
+		<div class="flex flex-col w-full h-full space-y-6">
+			<AboutCard title={"Health"} bg="bg-strawberry-200">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper elementum sapien ut imperdiet. Vivamus eu risus a nunc vestibulum mollis. Nulla ac tincidunt mi, ut mollis arcu. Sed congue sagittis bibendum. Donec leo nibh, sagittis at mauris ut, egestas porta eros. Fusce purus risus, tristique rhoncus metus vel, scelerisque condimentum ex. Etiam malesuada leo eget erat ornare, eu malesuada arcu aliquam. In hac habitasse platea dictumst. Nulla laoreet, ex sit amet efficitur egestas, est orci laoreet massa, at viverra turpis elit vitae mauris. Praesent eleifend nibh eget est elementum, id vestibulum urna vestibulum.
 			</AboutCard>
-			<AboutCard title={"Other"} class="mt-3">
+			<AboutCard title={"Other"}>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper elementum sapien ut imperdiet. Vivamus eu risus a nunc vestibulum mollis. Nulla ac tincidunt mi, ut mollis arcu. Sed congue sagittis bibendum. Donec leo nibh, sagittis at mauris ut, egestas porta eros. Fusce purus risus, tristique rhoncus metus vel, scelerisque condimentum ex. Etiam malesuada leo eget erat ornare, eu malesuada arcu aliquam. In hac habitasse platea dictumst. Nulla laoreet, ex sit amet efficitur egestas, est orci laoreet massa, at viverra turpis elit vitae mauris. Praesent eleifend nibh eget est elementum, id vestibulum urna vestibulum.
 			</AboutCard>
 		</div>
@@ -147,14 +148,20 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 		<h1 class="text-4xl md:text-6xl font-black text-white">Sponsors</h1>
 		<h3 class="mt-2 text-xl md:text-2xl font-bold text-blueberry-200">It wouldn't have been possible without these guys</h3>
 	</div>
-	<div class="mt-0">
-		{#each tierSectionData as section}
-			<SponsorsReel bg={section.bg} cardsData={section.cards} title={section.title}/>
-		{/each}
-	</div>
+	{#each tierSectionData as section}
+		<SponsorsReel bg={section.bg} cardsData={section.cards} title={section.title}/>
+	{/each}
 </section>
 
 <section class="mt-6 text-blueberry-200 p-8 md:p-12">
 	<h1 class="text-4xl md:text-6xl font-black text-white">Meet The Team</h1>
 	<h3 class="mt-2 text-xl md:text-2xl font-bold text-blueberry-200">Hello, us!</h3>
+	<div class="flex flex-wrap gap-8 mt-8">
+		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />
+		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />
+		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />
+		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />
+		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />
+		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />
+	</div>
 </section>
