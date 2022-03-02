@@ -2,6 +2,7 @@
 import TeamMember from "../components/TeamMember.svelte";
 import AboutCard from "../components/AboutCard.svelte";
 import SponsorsReel from "../components/SponsorsReel.svelte";
+import GoogleMap from "../components/GoogleMap.svelte";
 
 // Sponsorship Tiers Code
 const goldTierData = {
@@ -24,6 +25,12 @@ const bronzeTierData = {
 
 const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 </script>
+
+<svelte:head>
+	<script defer async
+	src="https://maps.googleapis.com/maps/api/js?key=">
+	</script>
+</svelte:head>
 
 <!-- Intro Section -->
 <nav class="h-24 px-8 md:px-12 py-8 flex text-white text-lg font-black">
@@ -163,5 +170,23 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />
 		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />
 		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />
+	</div>
+</section>
+
+
+<section class="mt-6 text-blueberry-200 p-8 md:p-12">
+	<div class="flex flex-col lg:flex-row items-center justify-center lg:space-x-32 space-y-6 lg:space-y-0 m-auto">
+		<div class="w-full lg:w-2/3">
+			<h1 class="text-5xl md:text-7xl font-black text-white">Location</h1>
+			<h3 class="text-xl font-black text-white mt-3">Yext DC Metro</h3>
+			<h3 class="font-medium text-white mt-1">1101 Wilson Blvd, Arlington, VA 22209</h3>
+			<a
+				href="https://goo.gl/maps/DhX17rUhG27cAH9SA"
+				target="_blank"
+				rel="noopener noreferred"
+				class="block mt-2 text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl"
+			>Open in Google Maps</a>
+		</div>
+		<GoogleMap />
 	</div>
 </section>
