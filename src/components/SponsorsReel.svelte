@@ -7,9 +7,13 @@
 </script>
 
 <!-- TODO: Carousel buttons & Gradient for scrolling -->
-<div class="{bg} w-full p-8 md:p-12">
-  <h3 class="font-bold text-2xl text-black opacity-50 mb-4">{title}</h3>
-  {#each cardsData as card}
-    <SponsorsCard srcLogo={card.src} alt={card.alt} />
-  {/each}
+<div class="{bg} w-full py-8 pl-8 md:py-12 md:pl-8">
+  <h3 class="font-bold text-2xl text-black opacity-50">{title}</h3>
+  {#if cardsData && cardsData.length}
+    <div class="flex w-full space-x-4 mt-4">
+      {#each cardsData as card}
+        <SponsorsCard srcLogo={card.src} alt={card.alt} />
+      {/each}
+    </div>
+  {/if}
 </div>

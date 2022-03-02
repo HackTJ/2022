@@ -1,26 +1,29 @@
 <script>
 import TeamMember from "../components/TeamMember.svelte";
-import AboutCard from "../components/AboutCard.svelte";
+// import AboutCard from "../components/AboutCard.svelte";
 import SponsorsReel from "../components/SponsorsReel.svelte";
 import GoogleMap from "../components/GoogleMap.svelte";
+import Footer from '../components/Footer.svelte'
+import Modal from 'svelte-simple-modal'
+import {sponsors, teamMembers} from '../data/eventinfo'
 
 // Sponsorship Tiers Code
 const goldTierData = {
 	title: 'GOLD TIER',
 	bg: 'bg-[#D6B570]',
-	cards: [{src: '/sponsorlogos/eastbanc.png', alt: 'East Banc Sponsor Logo'}]
+	cards: sponsors.gold
 }
 
 const silverTierData = {
 	title: 'SILVER TIER',
 	bg: 'bg-[#C9D4E5]',
-	cards: [{src: '/sponsorlogos/eastbanc.png', alt: 'East Banc Sponsor Logo'}]
+	cards: sponsors.silver
 }
 
 const bronzeTierData = {
 	title: 'BRONZE TIER',
 	bg: 'bg-[#AF7A6D]',
-	cards: [{src: '/sponsorlogos/eastbanc.png', alt: 'East Banc Sponsor Logo'}]
+	cards: sponsors.bronze
 }
 
 const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
@@ -46,7 +49,6 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 <div class="h-[calc(100vh_-_8rem)] min-h-[512px]">
 	<div class="flex justify-start lg:justify-around items-center mt-18 px-8 md:px-12 h-[calc(100%_-_8rem)]">
 		<div class="flex flex-col">
-			<!-- TODO: Add TJ Dome on top of HackTJ branding for small screens -->
 			<img alt="TJHSST Dome" src="dome.svg"  class="block lg:hidden mb-3 w-24 h-24" />
 			<div class="text-white font-bold text-6xl md:text-8xl">
 				HackTJ
@@ -54,7 +56,7 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 				<sup class="text-3xl md:text-4xl font-mono align-super text-theme">9.0</sup>
 			</div>
 			<div class="text-white font-medium text-xl md:text-2xl w-3/4">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Build the next greatest thing. Oh, and bring your friends along too.
 			</div>
 			<div class="inline-block mt-3 w-48">
 				<a
@@ -98,19 +100,15 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 		Welcome to the Future Generation of <span class="text-theme">Coders</span>
 	</h1>
 	<div class="flex flex-col lg:flex-row mt-4 whitespace-pre-wrap text-lg space-y-8 lg:space-y-0 lg:space-x-8">
-		<p>
-			HackTJ is a lorem ipsum dolor sit amet, consectetur 24 hours, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex teams of 4 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-
-			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt build in 3 different prize tracks anim id est laborum
+		<p class='flex-1'>
+			Do you get excited watching your ideas come to life? Ever wanted to build the next Snapchat or create an Amazon Alexa skill? Program a drone? Create programs using the latest machine learning or virtual reality technology? 
+			
+			Come to HackTJ to make new friends, build mind-blowing projects, attend workshops to learn new tricks, and have a fantastic time!
 		</p>
-		<p>
-			HackTJ is a lorem ipsum dolor sit amet, consectetur 24 hours, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+		<p class=flex-1>
+			HackTJ is a student-run hackathon where you will have 24 hours to learn how to code and/or work with your friends to make your idea come to life.
 
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex teams of 4 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-
-			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt build in 3 different prize tracks anim id est laborum
+			HackTJ is open to any and all current high school students. If you're not a high school student but would like to attend, consider coming as a judge, mentor, or volunteer.
 		</p>
 	</div>
 	<div class="flex flex-row mt-6">
@@ -129,7 +127,7 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 				>Beginner Resources</a
 			>
 	</div>
-	<div class="flex flex-col lg:flex-row mt-12 w-full space-y-6 lg:space-x-6 lg:space-y-0">
+	<!-- <div class="flex flex-col lg:flex-row mt-12 w-full space-y-6 lg:space-x-6 lg:space-y-0">
 		<div class="flex flex-col w-full h-full space-y-6">
 			<AboutCard title={"Education"} bg="bg-spruce-200">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper elementum sapien ut imperdiet. Vivamus eu risus a nunc vestibulum mollis. Nulla ac tincidunt mi, ut mollis arcu. Sed congue sagittis bibendum. Donec leo nibh, sagittis at mauris ut, egestas porta eros. Fusce purus risus, tristique rhoncus metus vel, scelerisque condimentum ex. Etiam malesuada leo eget erat ornare, eu malesuada arcu aliquam. In hac habitasse platea dictumst. Nulla laoreet, ex sit amet efficitur egestas, est orci laoreet massa, at viverra turpis elit vitae mauris. Praesent eleifend nibh eget est elementum, id vestibulum urna vestibulum.
@@ -146,7 +144,7 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper elementum sapien ut imperdiet. Vivamus eu risus a nunc vestibulum mollis. Nulla ac tincidunt mi, ut mollis arcu. Sed congue sagittis bibendum. Donec leo nibh, sagittis at mauris ut, egestas porta eros. Fusce purus risus, tristique rhoncus metus vel, scelerisque condimentum ex. Etiam malesuada leo eget erat ornare, eu malesuada arcu aliquam. In hac habitasse platea dictumst. Nulla laoreet, ex sit amet efficitur egestas, est orci laoreet massa, at viverra turpis elit vitae mauris. Praesent eleifend nibh eget est elementum, id vestibulum urna vestibulum.
 			</AboutCard>
 		</div>
-	</div>
+	</div> -->
 </section>
 
 <!-- Sponsors Reel -->
@@ -160,20 +158,26 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 	{/each}
 </section>
 
+<!-- Meet the team -->
 <section class="mt-6 text-blueberry-200 p-8 md:p-12">
 	<h1 class="text-4xl md:text-6xl font-black text-white">Meet The Team</h1>
 	<h3 class="mt-2 text-xl md:text-2xl font-bold text-blueberry-200">Hello, us!</h3>
-	<div class="flex flex-wrap gap-8 mt-8 m-auto justify-center md:justify-start">
-		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />
-		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />
-		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />
-		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />
-		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />
-		<TeamMember photoSrc="/teamportraits/johndoe.png" name="John Doe" />
-	</div>
+	<Modal
+		unstyled={true}
+		classBg="fixed top-0 left-0 w-screen h-screen flex flex-col justify-center bg-blackberry-800/[0.8] z-10"
+		classWindowWrap="relative m-4 max-h-full"
+		classWindow="rounded-2xl bg-theme text-black p-8 max-w-xl max-h-full m-auto"
+		closeButton={false}
+	>
+		<div class="flex flex-wrap gap-8 mt-8 m-auto justify-center md:justify-start">
+			{#each teamMembers as {description, portraitSrc, name}}
+				<TeamMember description={description} portraitSrc={portraitSrc} name={name} />
+			{/each}
+		</div>
+	</Modal>
 </section>
 
-
+<!-- Location -->
 <section class="mt-6 text-blueberry-200 p-8 md:p-12">
 	<div class="flex flex-col lg:flex-row items-center justify-center lg:space-x-32 space-y-6 lg:space-y-0 m-auto">
 		<div class="w-full lg:w-2/3">
@@ -184,9 +188,12 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 				href="https://goo.gl/maps/DhX17rUhG27cAH9SA"
 				target="_blank"
 				rel="noopener noreferred"
-				class="block mt-2 text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl"
+				class="block mt-4 text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl"
 			>Open in Google Maps</a>
 		</div>
 		<GoogleMap />
 	</div>
 </section>
+
+<!-- Footer -->
+<Footer />

@@ -1,6 +1,7 @@
 <script>
   export let title;
   export let bg = "bg-blueberry-200";
+  
   let classNames = "";
   export  { classNames as class }
 </script>
@@ -9,3 +10,4 @@
   <h1 class="text-4xl font-bold">{title}</h1>
   <p class="mt-3"><slot/></p>
 </div>
+
