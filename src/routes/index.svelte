@@ -28,7 +28,7 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 
 const navItems = [
 	{text: "About", href: "#about"},
-	{text: "Sponsors", href: "#Sponsors"},
+	{text: "Sponsors", href: "#sponsors"},
 	{text: "Team", href: "#team"},
 	{text: "Location", href: "#location"},
 ]
