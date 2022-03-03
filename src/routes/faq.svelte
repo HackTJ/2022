@@ -5,7 +5,7 @@
 </script>
 
 <section class="text-blueberry-200 flex flex-col justify-between min-h-screen">
-  <div class="p-8 md:p-12 ">
+  <div class="p-8 md:p-12">
     <a href="/"><ArrowBack width='32px' class="text-theme"/></a>
     <div class="flex items-center mt-8">
       <div class="flex bg-theme rounded-2xl h-16 w-16 items-center mr-4">

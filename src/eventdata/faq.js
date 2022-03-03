@@ -1,4 +1,15 @@
+/**
+ * This File contains all information needed for the FAQ page
+ */
+
 import { FAQCodeOfConduct, FAQPrizes, FAQRegister, FAQDeadline } from './FAQComponents';
+
+/**
+ * Each object should be in the format
+ * {question, answer} or {question, answerCoponent}
+ * answer will just be a simple string, while answerComponent is a svelte component in FAQComponents
+ * Reasons we might want to use FAQComponents is so we can do things like links and lists
+ */
 
 export default [
 	{

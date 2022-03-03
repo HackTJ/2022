@@ -1,8 +1,8 @@
 <script>
-import TeamMember from "../components/TeamMember.svelte";
+import TeamMember from "../components/Index/TeamMember.svelte";
 // import AboutCard from "../components/AboutCard.svelte";
-import SponsorsReel from "../components/SponsorsReel.svelte";
-import GoogleMap from "../components/GoogleMap.svelte";
+import SponsorsReel from "../components/Index/SponsorsReel.svelte";
+import GoogleMap from "../components/Index/GoogleMap.svelte";
 import Footer from '../components/Footer.svelte'
 import Modal from 'svelte-simple-modal'
 import {sponsors, teamMembers} from '../eventdata'
@@ -27,6 +27,18 @@ const bronzeTierData = {
 }
 
 const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
+
+// Taken from https://svelte.dev/repl/0a9f812027da4d99b253f39a1941986c?version=3.31.0
+function handleNavAnchorClick(event) {
+	event.preventDefault()
+	const link = event.currentTarget
+	const anchorId = new URL(link.href).hash.replace('#', '')
+	const anchor = document.getElementById(anchorId)
+	window.scrollTo({
+		top: anchor.offsetTop,
+		behavior: 'smooth'
+	})
+}
 </script>
 
 <svelte:head>
@@ -39,13 +51,14 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 <nav class="h-24 px-8 md:px-12 py-8 flex text-white text-lg font-black">
 	<!-- TODO: Mobile dropdown -->
 	<ul class="flex items-center ml-auto space-x-8">
-		<li><a href="/about" class="hover:text-theme">About</a></li>
-		<li><a href="/faq" class="hover:text-theme">FAQ</a></li>
-		<li><a href="/sponsors" class="hover:text-theme">Sponsors</a></li>
-		<li><a href="/team" class="hover:text-theme">Team</a></li>
-		<li><a href="/location" class="hover:text-theme">Location</a></li>
+		<li><a href="#about" on:click={handleNavAnchorClick} class="hover:text-theme">About</a></li>
+		<li><a href="#sponsors" on:click={handleNavAnchorClick} class="hover:text-theme">Sponsors</a></li>
+		<li><a href="#team" on:click={handleNavAnchorClick} class="hover:text-theme">Team</a></li>
+		<li><a href="#location" on:click={handleNavAnchorClick} class="hover:text-theme">Location</a></li>
 	</ul>
 </nav>
+
+<!-- Home screen -->
 <div class="h-[calc(100vh_-_8rem)] min-h-[512px]">
 	<div class="flex justify-start lg:justify-around items-center mt-18 px-8 md:px-12 h-[calc(100%_-_8rem)]">
 		<div class="flex flex-col">
@@ -95,7 +108,7 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 </div>
 
 <!-- About Section -->
-<section class="mt-8 p-8 md:p-12 text-blueberry-200">
+<section class="mt-8 p-8 md:p-12 text-blueberry-200" id="about">
 	<h1 class="text-4xl md:text-6xl lg:text-7xl font-black">
 		Welcome to the Future Generation of <span class="text-theme">Coders</span>
 	</h1>
@@ -148,7 +161,7 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 </section>
 
 <!-- Sponsors Reel -->
-<section class="mt-6 text-blueberry-200">
+<section class="mt-6 text-blueberry-200" id="sponsors">
 	<div class="p-8 md:p-12">
 		<h1 class="text-4xl md:text-6xl font-black text-white">Sponsors</h1>
 		<h3 class="mt-2 text-xl md:text-2xl font-bold text-blueberry-200">It wouldn't have been possible without these guys</h3>
@@ -159,7 +172,7 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 </section>
 
 <!-- Meet the team -->
-<section class="mt-6 text-blueberry-200 p-8 md:p-12">
+<section class="mt-6 text-blueberry-200 p-8 md:p-12" id="team">
 	<h1 class="text-4xl md:text-6xl font-black text-white">Meet The Team</h1>
 	<h3 class="mt-2 text-xl md:text-2xl font-bold text-blueberry-200">Hello, us!</h3>
 	<Modal
@@ -178,7 +191,7 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 </section>
 
 <!-- Location -->
-<section class="mt-6 text-blueberry-200 p-8 md:p-12">
+<section class="mt-6 text-blueberry-200 p-8 md:p-12" id="location">
 	<div class="flex flex-col lg:flex-row items-center justify-center lg:space-x-32 space-y-6 lg:space-y-0 m-auto">
 		<div class="w-full lg:w-2/3">
 			<h1 class="text-5xl md:text-7xl font-black text-white">Location</h1>

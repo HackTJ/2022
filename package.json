@@ -33,6 +33,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@svicons/ionicons-solid": "^0.1.6"
+		"@svicons/ionicons-solid": "^0.1.6",
+		"moment": "^2.29.1"
 	}
 }

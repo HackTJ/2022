@@ -1,3 +1,7 @@
+/**
+ * This file contains all the sponsor information for the sponsor section of the index
+ */
+
 export default {
   gold: [{src: '/sponsorlogos/eastbanc.png', alt: 'East Banc Sponsor Logo'}],
   silver: [/**EMPTY WAA */],

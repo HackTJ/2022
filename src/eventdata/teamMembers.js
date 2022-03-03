@@ -1,3 +1,7 @@
+/**
+ * This file contains all the team information for the team section of the index
+ */
+
 export default [
   {
     "name": "Ananya Patel",

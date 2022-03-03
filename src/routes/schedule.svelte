@@ -1,0 +1,64 @@
+<script>
+  import ArrowBack from '@svicons/ionicons-solid/arrow-back.svelte'
+  import ScheduleItemColumn from '../components/Schedule/ScheduleItemColumn.svelte';
+  import Footer from '../components/Footer.svelte'
+  import schedule from '../eventdata/schedule';
+
+  const dates = [...new Set(schedule.map(({time}) => time.format("M/DD/YYYY")))]
+  const cardData = {}
+  
+  dates.forEach(date => {
+    cardData[date] = {}
+    const matchedDate = schedule.filter(({time}) => time.format("M/DD/YYYY") === date)
+    const uniqueHours = [...new Set(matchedDate.map(({time}) => time.hours()))]
+
+    const min = Math.min(...uniqueHours)
+    const max = Math.max(...uniqueHours)
+
+    for (let h = min; h <= max; h++) {    
+      const matchedHours = matchedDate.filter(({time}) => time.hours() == h)
+      // Get the time for the column label
+      let columnTime = matchedDate[0].time.clone()
+      columnTime.set({hour: h, minute: 0, second: 0, millisecond:0})
+      // Set the data
+      cardData[date][h] = {columnTime, data: matchedHours}
+    }
+  })
+
+  let currentDateIndex = 0
+  let currentDate = Object.keys(cardData)[currentDateIndex]
+  let hourlyData = Object.values(cardData[currentDate])
+
+  const activeButtonClass = "bg-theme text-blueberry-800"
+  const inactiveButtonClass = "outline-3 outline-white text-white"
+
+  function updateIndex(i) {
+    currentDateIndex = i
+    currentDate = Object.keys(cardData)[currentDateIndex]
+    hourlyData = Object.values(cardData[currentDate])
+  }
+</script>
+
+<section class="text-blueberry-200 flex flex-col justify-between min-h-screen">
+  <div class="h-full grow flex flex-col">
+    <div class="px-8 md:px-12 pt-8 md:pt-12">
+      <a href="/"><ArrowBack width='32px' class="text-theme"/></a>
+      <h1 class="pt-8 md:pt-8 text-5xl font-black text-white">Schedule</h1>
+      <div class="flex space-x-4 mt-4">
+        {#each Object.keys(cardData) as date, i}
+          <button
+            on:click={() => {updateIndex(i)}}
+            class="text-center px-8 py-3 text-xl font-bold rounded-2xl {currentDateIndex === i ? activeButtonClass : inactiveButtonClass}"
+            >{date}</button
+          >
+        {/each}
+    </div>
+    </div>
+    <div class="flex space-x-8 overflow-scroll h-full px-8 md:px-12 pb-8 md:pb-12 pt-6 grow">
+      {#each hourlyData as {data, columnTime}}
+        <ScheduleItemColumn cardData={data} columnTime={columnTime}/>
+      {/each}
+    </div>
+  </div>
+  <Footer/>
+</section>
