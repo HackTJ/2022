@@ -31,18 +31,6 @@ export default [
     answer: "Yes, good question! We have adopted the MLH code of conduct, which all attendees will be required to adhere to."
   },
   {
-    question: "Is there a code of conduct?",
-    answer: "Yes, good question! We have adopted the MLH code of conduct, which all attendees will be required to adhere to."
-  },
-  {
-    question: "Is there a code of conduct?",
-    answer: "Yes, good question! We have adopted the MLH code of conduct, which all attendees will be required to adhere to."
-  },
-  {
-    question: "Is there a code of conduct?",
-    answer: "Yes, good question! We have adopted the MLH code of conduct, which all attendees will be required to adhere to."
-  },
-  {
     question: "Isn't hacking illegal?",
     answer: "In the context of a hackathon, \"hacking\" is to build a real application over the length of the event. It's important to not confuse this with illegal hacking, which is gaining unauthorized access to a computer."
   },
