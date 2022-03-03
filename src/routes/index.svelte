@@ -5,7 +5,7 @@ import SponsorsReel from "../components/SponsorsReel.svelte";
 import GoogleMap from "../components/GoogleMap.svelte";
 import Footer from '../components/Footer.svelte'
 import Modal from 'svelte-simple-modal'
-import {sponsors, teamMembers} from '../data/eventinfo'
+import {sponsors, teamMembers} from '../eventdata'
 
 // Sponsorship Tiers Code
 const goldTierData = {
@@ -196,4 +196,4 @@ const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 </section>
 
 <!-- Footer -->
-<Footer />
+<Footer class="mt-8"/>

@@ -1,15 +1,4 @@
-// TODO: Add more information (text even?) to /data
-
-const sponsors = {
-  gold: [{src: '/sponsorlogos/eastbanc.png', alt: 'East Banc Sponsor Logo'}],
-  silver: [/**EMPTY WAA */],
-  bronze: [
-    {src: '/sponsorlogos/collinsaero.png', alt: 'Collins Aerospace Sponsor Logo'},
-    {src: '/sponsorlogos/blueridge.png', alt: 'Blueridge Networks Sponsor Logo'}
-  ],
-}
-
-const teamMembers = [
+export default [
   {
     "name": "Ananya Patel",
     "description": "Ananya is a sophomore at TJ and this is her first year on the HackTJ team. She really enjoyed competing in Hack TJ her freshman year and is excited to help organize this year’s Hack TJ event! She is interested in astrophysics and cs. In her free time, Ananya enjoys dancing, reading, and baking.",
@@ -86,7 +75,3 @@ const teamMembers = [
     "portraitSrc": "/teamportraits/MsRazzino.JPG"
   }
 ]
-
-export {
-  sponsors, teamMembers
-}
