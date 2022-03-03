@@ -14,7 +14,7 @@
 
 <!-- TODO: Dialog Popup -->
 <div class="{classNames}">
-  <img class="max-h-[250px] max-w-[250px] bg-center bg-cove rounded-2xl" src={portraitSrc} alt="A team member"/>
+  <img class="max-h-[256px] w-full object-center object-cover rounded-2xl" src={portraitSrc} alt="A team member"/>
   <div class="flex flex-row h-16 items-center justify-between mt-2">
     <h4 class="text font-medium font-mono">{name}</h4>
     <button

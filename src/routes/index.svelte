@@ -4,6 +4,7 @@ import TeamMember from "../components/Index/TeamMember.svelte";
 import SponsorsReel from "../components/Index/SponsorsReel.svelte";
 import GoogleMap from "../components/Index/GoogleMap.svelte";
 import Footer from '../components/Footer.svelte'
+import Navbar from "../components/Navbar.svelte";
 import Modal from 'svelte-simple-modal'
 import {sponsors, teamMembers} from '../eventdata'
 
@@ -13,32 +14,24 @@ const goldTierData = {
 	bg: 'bg-[#D6B570]',
 	cards: sponsors.gold
 }
-
 const silverTierData = {
 	title: 'SILVER TIER',
 	bg: 'bg-[#C9D4E5]',
 	cards: sponsors.silver
 }
-
 const bronzeTierData = {
 	title: 'BRONZE TIER',
 	bg: 'bg-[#AF7A6D]',
 	cards: sponsors.bronze
 }
-
 const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
 
-// Taken from https://svelte.dev/repl/0a9f812027da4d99b253f39a1941986c?version=3.31.0
-function handleNavAnchorClick(event) {
-	event.preventDefault()
-	const link = event.currentTarget
-	const anchorId = new URL(link.href).hash.replace('#', '')
-	const anchor = document.getElementById(anchorId)
-	window.scrollTo({
-		top: anchor.offsetTop,
-		behavior: 'smooth'
-	})
-}
+const navItems = [
+	{text: "About", href: "#about"},
+	{text: "Sponsors", href: "#Sponsors"},
+	{text: "Team", href: "#team"},
+	{text: "Location", href: "#location"},
+]
 </script>
 
 <svelte:head>
@@ -47,17 +40,7 @@ function handleNavAnchorClick(event) {
 	</script>
 </svelte:head>
 
-<!-- Intro Section -->
-<nav class="h-24 px-8 md:px-12 py-8 flex text-white text-lg font-black">
-	<!-- TODO: Mobile dropdown -->
-	<ul class="flex items-center ml-auto space-x-8">
-		<li><a href="#about" on:click={handleNavAnchorClick} class="hover:text-theme">About</a></li>
-		<li><a href="#sponsors" on:click={handleNavAnchorClick} class="hover:text-theme">Sponsors</a></li>
-		<li><a href="#team" on:click={handleNavAnchorClick} class="hover:text-theme">Team</a></li>
-		<li><a href="#location" on:click={handleNavAnchorClick} class="hover:text-theme">Location</a></li>
-	</ul>
-</nav>
-
+<Navbar navItems={navItems} />
 <!-- Home screen -->
 <div class="h-[calc(100vh_-_8rem)] min-h-[512px]">
 	<div class="flex justify-start lg:justify-around items-center mt-18 px-8 md:px-12 h-[calc(100%_-_8rem)]">
@@ -124,12 +107,12 @@ function handleNavAnchorClick(event) {
 			HackTJ is open to any and all current high school students. If you're not a high school student but would like to attend, consider coming as a judge, mentor, or volunteer.
 		</p>
 	</div>
-	<div class="flex flex-row mt-6">
+	<div class="flex flex-col md:flex-row mt-6 space-y-3 md:space-y-0 space-x-0 md:space-x-3">
 		<a
 				href="/faq"
 				target="_blank"
 				rel="noopener noreferred"
-				class="block text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl px-8 mr-3"
+				class="block text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl px-8"
 				>FAQ</a
 			>
 			<a
@@ -166,8 +149,8 @@ function handleNavAnchorClick(event) {
 		<h1 class="text-4xl md:text-6xl font-black text-white">Sponsors</h1>
 		<h3 class="mt-2 text-xl md:text-2xl font-bold text-blueberry-200">It wouldn't have been possible without these guys</h3>
 	</div>
-	{#each tierSectionData as section}
-		<SponsorsReel bg={section.bg} cardsData={section.cards} title={section.title}/>
+	{#each tierSectionData as {bg, cards, title}}
+		<SponsorsReel bg={bg} cardsData={cards} title={title}/>
 	{/each}
 </section>
 
@@ -182,7 +165,7 @@ function handleNavAnchorClick(event) {
 		classWindow="rounded-2xl bg-theme text-black p-8 max-w-xl max-h-full m-auto"
 		closeButton={false}
 	>
-		<div class="flex flex-wrap gap-8 mt-8 m-auto justify-center md:justify-start">
+		<div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8">
 			{#each teamMembers as {description, portraitSrc, name}}
 				<TeamMember description={description} portraitSrc={portraitSrc} name={name} />
 			{/each}
