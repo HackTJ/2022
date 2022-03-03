@@ -1,6 +1,6 @@
-HackTJ hosts prizes for the best projects in the following categories:
+<p>HackTJ hosts prizes for the best projects in the following categories:</p>
 
-<ul class="list-disc">
+<ul class="list-disc mt-2">
   <li>Overall Hack</li>
   <li class="mt-1">Web App</li>
   <li class="mt-1">Mobile App</li>
@@ -10,4 +10,4 @@ HackTJ hosts prizes for the best projects in the following categories:
   <li class="mt-1 mb-3">Beginner Hack (first-year coder teams)</li>
 </ul>
 
-Major League Hacking and some of our partners also host their own Sponsored Prizes, which you can explore when the 8.0 Devpost goes live.
+<p>Major League Hacking and some of our partners also host their own Sponsored Prizes, which you can explore when the 9.0 Devpost goes live.</p>

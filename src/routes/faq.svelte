@@ -16,12 +16,14 @@
     <div class="w-full mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-16">
       {#each faq as {question, answer, answerComponent}}
         <div class="text-white">
-          <h3 class="font-bold text-xl">{question}</h3>
-          {#if answer}
-            <p>{answer}</p>
-          {:else if answerComponent}
-            <svelte:component this={answerComponent}/>
-          {/if}
+          <h3 class="font-bold text-xl whitespace-pre-wrap">{question}</h3>
+          <div class="mt-1">
+            {#if answer}
+              <p>{answer}</p>
+            {:else if answerComponent}
+              <svelte:component this={answerComponent}/>
+            {/if}
+          </div>
         </div>
       {/each}
     </div>
