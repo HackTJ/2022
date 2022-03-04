@@ -30,7 +30,7 @@
   let hourlyData = Object.values(cardData[currentDate])
 
   const activeButtonClass = "bg-theme text-blueberry-800"
-  const inactiveButtonClass = "outline-3 outline-white text-white"
+  const inactiveButtonClass = "border-2 border-white text-white"
 
   function updateIndex(i) {
     currentDateIndex = i
@@ -44,7 +44,7 @@
     <div class="px-8 md:px-12 pt-8 md:pt-12">
       <a href="/"><Home width='32px' class="text-theme"/></a>
       <h1 class="pt-8 md:pt-8 text-5xl font-black text-white">Schedule</h1>
-      <div class="flex space-x-4 mt-4">
+      <div class="flex flex-col md:flex-row space-x-0 md:space-x-4 space-y-4 md:space-y-0 mt-4">
         {#each Object.keys(cardData) as date, i}
           <button
             on:click={() => {updateIndex(i)}}
