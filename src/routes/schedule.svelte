@@ -1,5 +1,5 @@
 <script>
-  import ArrowBack from '@svicons/ionicons-solid/arrow-back.svelte'
+  import Home from '@svicons/ionicons-solid/home.svelte'
   import ScheduleItemColumn from '../components/Schedule/ScheduleItemColumn.svelte';
   import Footer from '../components/Footer.svelte'
   import schedule from '../eventdata/schedule';
@@ -42,7 +42,7 @@
 <section class="text-blueberry-200 flex flex-col justify-between min-h-screen">
   <div class="h-full grow flex flex-col">
     <div class="px-8 md:px-12 pt-8 md:pt-12">
-      <a href="/"><ArrowBack width='32px' class="text-theme"/></a>
+      <a href="/"><Home width='32px' class="text-theme"/></a>
       <h1 class="pt-8 md:pt-8 text-5xl font-black text-white">Schedule</h1>
       <div class="flex space-x-4 mt-4">
         {#each Object.keys(cardData) as date, i}

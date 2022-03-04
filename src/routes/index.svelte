@@ -110,15 +110,11 @@ const navItems = [
 	<div class="flex flex-col md:flex-row mt-6 space-y-3 md:space-y-0 space-x-0 md:space-x-3">
 		<a
 				href="/faq"
-				target="_blank"
-				rel="noopener noreferred"
 				class="block text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl px-8"
 				>FAQ</a
 			>
 			<a
-				href="/beginnerresources"
-				target="_blank"
-				rel="noopener noreferred"
+				href="/resources"
 				class="block text-center py-3 bg-spruce-200 text-blueberry-800 text-xl font-bold rounded-2xl px-8"
 				>Beginner Resources</a
 			>
