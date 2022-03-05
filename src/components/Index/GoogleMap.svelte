@@ -1,22 +1,22 @@
 <script>
-  import { onMount } from 'svelte'
+	import { onMount } from 'svelte';
 
-  export let zoom = 18;
-  export let latlng = {lat: 38.895271, lng: -77.069702}; // YEXT HQ Location
-  
-  // TODO: Styling Map
-  onMount(async () => {
-    let google = window.google
-    let mapCanvas = document.getElementById("map-canvas");
+	export let zoom = 18;
+	export let latlng = { lat: 38.895271, lng: -77.069702 }; // YEXT HQ Location
 
-    mapCanvas = new google.maps.Map(mapCanvas, {zoom, center: latlng})
+	// TODO: Styling Map
+	onMount(async () => {
+		let google = window.google;
+		let mapCanvas = document.getElementById('map-canvas');
 
-    new google.maps.Marker({
-      map: mapCanvas,
-      position: latlng,
-      animation: google.maps.Animation.DROP,
-    });
-  })
+		mapCanvas = new google.maps.Map(mapCanvas, { zoom, center: latlng });
+
+		new google.maps.Marker({
+			map: mapCanvas,
+			position: latlng,
+			animation: google.maps.Animation.DROP
+		});
+	});
 </script>
 
-<div class="w-full h-[400px] rounded-2xl" id="map-canvas"></div>
+<div class="w-full h-[400px] rounded-2xl" id="map-canvas" />

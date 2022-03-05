@@ -1,51 +1,52 @@
 <script>
-import TeamMember from "../components/Index/TeamMember.svelte";
-// import AboutCard from "../components/AboutCard.svelte";
-import SponsorsReel from "../components/Index/SponsorsReel.svelte";
-import GoogleMap from "../components/Index/GoogleMap.svelte";
-import Footer from '../components/Footer.svelte'
-import Navbar from "../components/Navbar.svelte";
-import Modal from 'svelte-simple-modal'
-import {sponsors, teamMembers} from '../eventdata'
+	import TeamMember from '../components/Index/TeamMember.svelte';
+	// import AboutCard from "../components/AboutCard.svelte";
+	import SponsorsReel from '../components/Index/SponsorsReel.svelte';
+	import GoogleMap from '../components/Index/GoogleMap.svelte';
+	import Footer from '../components/Footer.svelte';
+	import Navbar from '../components/Navbar.svelte';
+	import Modal from 'svelte-simple-modal';
+	import { sponsors, teamMembers } from '../eventdata';
 
-// Sponsorship Tiers Code
-const goldTierData = {
-	title: 'GOLD TIER',
-	bg: 'bg-[#D6B570]',
-	cards: sponsors.gold
-}
-const silverTierData = {
-	title: 'SILVER TIER',
-	bg: 'bg-[#C9D4E5]',
-	cards: sponsors.silver
-}
-const bronzeTierData = {
-	title: 'BRONZE TIER',
-	bg: 'bg-[#AF7A6D]',
-	cards: sponsors.bronze
-}
-const tierSectionData = [goldTierData, silverTierData, bronzeTierData]
+	// Sponsorship Tiers Code
+	const goldTierData = {
+		title: 'GOLD TIER',
+		bg: 'bg-[#D6B570]',
+		cards: sponsors.gold
+	};
+	const silverTierData = {
+		title: 'SILVER TIER',
+		bg: 'bg-[#C9D4E5]',
+		cards: sponsors.silver
+	};
+	const bronzeTierData = {
+		title: 'BRONZE TIER',
+		bg: 'bg-[#AF7A6D]',
+		cards: sponsors.bronze
+	};
+	const tierSectionData = [goldTierData, silverTierData, bronzeTierData];
 
-const navItems = [
-	{text: "About", href: "#about"},
-	{text: "Sponsors", href: "#sponsors"},
-	{text: "Team", href: "#team"},
-	{text: "Location", href: "#location"},
-]
+	const navItems = [
+		{ text: 'About', href: '#about' },
+		{ text: 'Sponsors', href: '#sponsors' },
+		{ text: 'Team', href: '#team' },
+		{ text: 'Location', href: '#location' }
+	];
 </script>
 
 <svelte:head>
-	<script defer async
-	src="https://maps.googleapis.com/maps/api/js?key=">
+	<script defer async src="https://maps.googleapis.com/maps/api/js?key=">
 	</script>
 </svelte:head>
 
-<Navbar navItems={navItems} />
+<Navbar {navItems} />
 <!-- Home screen -->
 <div class="h-[calc(100vh_-_8rem)] min-h-[512px]">
-	<div class="flex justify-start lg:justify-around items-center mt-18 px-8 md:px-12 h-[calc(100%_-_8rem)]">
+	<div
+		class="flex justify-start lg:justify-around items-center mt-18 px-8 md:px-12 h-[calc(100%_-_8rem)]"
+	>
 		<div class="flex flex-col">
-			<img alt="TJHSST Dome" src="dome.svg"  class="block lg:hidden mb-3 w-24 h-24" />
+			<img alt="TJHSST Dome" src="dome.svg" class="block lg:hidden mb-3 w-24 h-24" />
 			<div class="text-white font-bold text-6xl md:text-8xl">
 				HackTJ
 				<!-- TODO: `Overpass Mono`: -->
@@ -71,10 +72,15 @@ const navItems = [
 				>
 			</div>
 		</div>
-			<img alt="TJHSST Dome" src="dome.svg"  class="hidden lg:flex self-end max-h-full" />
+		<img alt="TJHSST Dome" src="dome.svg" class="hidden lg:flex self-end max-h-full" />
 	</div>
 	<div class="w-full absolute bottom-0 lg:w-auto lg:relative">
-		<svg class="-mt-1 mb-2 md:mb-6" viewBox="0 0 1440 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<svg
+			class="-mt-1 mb-2 md:mb-6"
+			viewBox="0 0 1440 61"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
 			<rect x="-326" width="599" height="61" rx="30.5" fill="#FE5F55" />
 			<path
 				d="M321 30.5C321 13.6553 334.655 0 351.5 0H1441V61H351.5C334.655 61 321 47.3447 321 30.5V30.5Z"
@@ -95,29 +101,33 @@ const navItems = [
 	<h1 class="text-4xl md:text-6xl lg:text-7xl font-black">
 		Welcome to the Future Generation of <span class="text-theme">Coders</span>
 	</h1>
-	<div class="flex flex-col lg:flex-row mt-4 whitespace-pre-wrap text-lg space-y-8 lg:space-y-0 lg:space-x-8">
-		<p class='flex-1'>
-			Do you get excited watching your ideas come to life? Ever wanted to build the next Snapchat or create an Amazon Alexa skill? Program a drone? Create programs using the latest machine learning or virtual reality technology? 
-			
-			Come to HackTJ to make new friends, build mind-blowing projects, attend workshops to learn new tricks, and have a fantastic time!
+	<div
+		class="flex flex-col lg:flex-row mt-4 whitespace-pre-wrap text-lg space-y-8 lg:space-y-0 lg:space-x-8"
+	>
+		<p class="flex-1">
+			Do you get excited watching your ideas come to life? Ever wanted to build the next Snapchat or
+			create an Amazon Alexa skill? Program a drone? Create programs using the latest machine
+			learning or virtual reality technology? Come to HackTJ to make new friends, build mind-blowing
+			projects, attend workshops to learn new tricks, and have a fantastic time!
 		</p>
-		<p class=flex-1>
-			HackTJ is a student-run hackathon where you will have 24 hours to learn how to code and/or work with your friends to make your idea come to life.
-
-			HackTJ is open to any and all current high school students. If you're not a high school student but would like to attend, consider coming as a judge, mentor, or volunteer.
+		<p class="flex-1">
+			HackTJ is a student-run hackathon where you will have 24 hours to learn how to code and/or
+			work with your friends to make your idea come to life. HackTJ is open to any and all current
+			high school students. If you're not a high school student but would like to attend, consider
+			coming as a judge, mentor, or volunteer.
 		</p>
 	</div>
 	<div class="flex flex-col md:flex-row mt-6 space-y-3 md:space-y-0 space-x-0 md:space-x-3">
 		<a
-				href="/faq"
-				class="block text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl px-8"
-				>FAQ</a
-			>
-			<a
-				href="/resources"
-				class="block text-center py-3 bg-spruce-200 text-blueberry-800 text-xl font-bold rounded-2xl px-8"
-				>Beginner Resources</a
-			>
+			href="/faq"
+			class="block text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl px-8"
+			>FAQ</a
+		>
+		<a
+			href="/resources"
+			class="block text-center py-3 bg-spruce-200 text-blueberry-800 text-xl font-bold rounded-2xl px-8"
+			>Beginner Resources</a
+		>
 	</div>
 	<!-- <div class="flex flex-col lg:flex-row mt-12 w-full space-y-6 lg:space-x-6 lg:space-y-0">
 		<div class="flex flex-col w-full h-full space-y-6">
@@ -143,10 +153,12 @@ const navItems = [
 <section class="mt-6 text-blueberry-200" id="sponsors">
 	<div class="p-8 md:p-12">
 		<h1 class="text-4xl md:text-6xl font-black text-white">Sponsors</h1>
-		<h3 class="mt-2 text-xl md:text-2xl font-bold text-blueberry-200">It wouldn't have been possible without these guys</h3>
+		<h3 class="mt-2 text-xl md:text-2xl font-bold text-blueberry-200">
+			It wouldn't have been possible without these guys
+		</h3>
 	</div>
-	{#each tierSectionData as {bg, cards, title}}
-		<SponsorsReel bg={bg} cardsData={cards} title={title}/>
+	{#each tierSectionData as { bg, cards, title }}
+		<SponsorsReel {bg} cardsData={cards} {title} />
 	{/each}
 </section>
 
@@ -161,9 +173,11 @@ const navItems = [
 		classWindow="rounded-2xl bg-theme text-black p-8 max-w-xl max-h-full m-auto"
 		closeButton={false}
 	>
-		<div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8">
-			{#each teamMembers as {description, portraitSrc, name}}
-				<TeamMember description={description} portraitSrc={portraitSrc} name={name} />
+		<div
+			class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8"
+		>
+			{#each teamMembers as { description, portraitSrc, name }}
+				<TeamMember {description} {portraitSrc} {name} />
 			{/each}
 		</div>
 	</Modal>
@@ -171,7 +185,9 @@ const navItems = [
 
 <!-- Location -->
 <section class="mt-6 text-blueberry-200 p-8 md:p-12" id="location">
-	<div class="flex flex-col lg:flex-row items-center justify-center lg:space-x-32 space-y-6 lg:space-y-0 m-auto">
+	<div
+		class="flex flex-col lg:flex-row items-center justify-center lg:space-x-32 space-y-6 lg:space-y-0 m-auto"
+	>
 		<div class="w-full lg:w-2/3">
 			<h1 class="text-5xl md:text-7xl font-black text-white">Location</h1>
 			<h3 class="text-xl font-black text-white mt-3">Yext DC Metro</h3>
@@ -181,11 +197,12 @@ const navItems = [
 				target="_blank"
 				rel="noopener noreferred"
 				class="block mt-4 text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl"
-			>Open in Google Maps</a>
+				>Open in Google Maps</a
+			>
 		</div>
 		<GoogleMap />
 	</div>
 </section>
 
 <!-- Footer -->
-<Footer class="mt-8"/>
+<Footer class="mt-8" />
