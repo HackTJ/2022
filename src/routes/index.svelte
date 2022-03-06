@@ -1,4 +1,6 @@
 <script>
+	import { base } from '$app/paths';
+
 	import TeamMember from '../components/Index/TeamMember.svelte';
 	// import AboutCard from "../components/AboutCard.svelte";
 	import SponsorsReel from '../components/Index/SponsorsReel.svelte';
@@ -46,7 +48,7 @@
 		class="flex justify-start lg:justify-around items-center mt-18 px-8 md:px-12 h-[calc(100%_-_8rem)]"
 	>
 		<div class="flex flex-col">
-			<img alt="TJHSST Dome" src="dome.svg" class="block lg:hidden mb-3 w-24 h-24" />
+			<img alt="TJHSST Dome" src={`${base}/dome.svg`} class="block lg:hidden mb-3 w-24 h-24" />
 			<div class="text-white font-bold text-6xl md:text-8xl">
 				HackTJ
 				<!-- TODO: `Overpass Mono`: -->
@@ -57,14 +59,14 @@
 			</div>
 			<div class="inline-block mt-3 w-48">
 				<a
-					href="/register"
+					href={`${base}/register`}
 					target="_blank"
 					rel="noopener noreferred"
 					class="block text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl"
 					>Register</a
 				>
 				<a
-					href="/schedule"
+					href={`${base}/schedule`}
 					target="_blank"
 					rel="noopener noreferred"
 					class="block mt-2 text-center py-3 bg-spruce-100 text-blueberry-800 text-xl font-bold rounded-2xl"
@@ -72,7 +74,7 @@
 				>
 			</div>
 		</div>
-		<img alt="TJHSST Dome" src="dome.svg" class="hidden lg:flex self-end max-h-full" />
+		<img alt="TJHSST Dome" src={`${base}/dome.svg`} class="hidden lg:flex self-end max-h-full" />
 	</div>
 	<div class="w-full absolute bottom-0 lg:w-auto lg:relative">
 		<svg
@@ -101,9 +103,7 @@
 	<h1 class="text-4xl md:text-6xl lg:text-7xl font-black">
 		Welcome to the Future Generation of <span class="text-theme">Coders</span>
 	</h1>
-	<div
-		class="flex flex-col lg:flex-row mt-4 whitespace-pre-wrap text-lg space-y-8 lg:space-y-0 lg:space-x-8"
-	>
+	<div class="flex flex-col lg:flex-row mt-4 text-lg space-y-8 lg:space-y-0 lg:space-x-8">
 		<p class="flex-1">
 			Do you get excited watching your ideas come to life? Ever wanted to build the next Snapchat or
 			create an Amazon Alexa skill? Program a drone? Create programs using the latest machine
@@ -119,12 +119,12 @@
 	</div>
 	<div class="flex flex-col md:flex-row mt-6 space-y-3 md:space-y-0 space-x-0 md:space-x-3">
 		<a
-			href="/faq"
+			href={`${base}/faq`}
 			class="block text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl px-8"
 			>FAQ</a
 		>
 		<a
-			href="/resources"
+			href={`${base}/resources`}
 			class="block text-center py-3 bg-spruce-200 text-blueberry-800 text-xl font-bold rounded-2xl px-8"
 			>Beginner Resources</a
 		>

@@ -2,10 +2,12 @@
  * This file contains all the sponsor information for the sponsor section of the index
  */
 
+import { base } from '$app/paths';
+
 export default {
 	gold: [
 		{
-			src: '/sponsorlogos/eastbanc.png',
+			src: `${base}/sponsorlogos/eastbanc.png`,
 			alt: 'East Banc Sponsor Logo',
 			href: 'https://eastbanctech.com/'
 		}
@@ -15,12 +17,12 @@ export default {
 	],
 	bronze: [
 		{
-			src: '/sponsorlogos/collinsaero.png',
+			src: `${base}/sponsorlogos/collinsaero.png`,
 			alt: 'Collins Aerospace Sponsor Logo',
 			href: 'https://www.collinsaerospace.com/'
 		},
 		{
-			src: '/sponsorlogos/blueridge.png',
+			src: `${base}/sponsorlogos/blueridge.png`,
 			alt: 'Blueridge Networks Sponsor Logo',
 			href: 'https://www.blueridgenetworks.com/'
 		}
