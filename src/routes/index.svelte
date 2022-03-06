@@ -54,9 +54,9 @@
 				<!-- TODO: `Overpass Mono`: -->
 				<sup class="text-3xl md:text-4xl font-mono align-super text-theme">9.0</sup>
 			</div>
-			<div class="text-white font-medium text-xl md:text-2xl w-3/4">
+			<h3 class="text-white font-medium text-xl md:text-2xl w-3/4">
 				Build the next greatest thing. Oh, and bring your friends along too.
-			</div>
+			</h3>
 			<div class="inline-block mt-3 w-48">
 				<a
 					href={`${base}/register`}
