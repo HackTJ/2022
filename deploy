@@ -8,19 +8,19 @@ timestamp=$(pnpm node -e "console.log(new Date())")
 gh_pages_args="--dist build --dotfiles --remove .DS_Store --message \"Update $timestamp\""
 
 log_and_run_cmd () {
-  echo -e "+ ${BLUE}pnpm $*${NORMAL}" && eval "$@"
+  echo -e "+ ${BLUE}$*${NORMAL}" && eval "$@"
   echo
 }
 
 deploy_event () {
-  log_and_run_cmd run switch event
-  log_and_run_cmd run build
+  log_and_run_cmd pnpm run switch event
+  log_and_run_cmd pnpm run build
   log_and_run_cmd gh-pages "$gh_pages_args"
 }
 
 deploy_homepage () {
-  log_and_run_cmd run switch homepage
-  log_and_run_cmd run build
+  log_and_run_cmd pnpm run switch homepage
+  log_and_run_cmd pnpm run build
   log_and_run_cmd gh-pages --branch main "$gh_pages_args"
 }
 
@@ -36,4 +36,4 @@ else
   exit 1
 fi
 
-run switch event
+pnpm run switch event
