@@ -34,7 +34,7 @@
 		<svelte:component this={mobileNavOpen ? Close : Menu} width="32px" class="static md:hidden" />
 	</div>
 	<div
-		class="justify-start md:justify-end flex md:flex flex-col md:flex-row space-y-8 md:space-y-0 space-x-0 md:space-x-8 mt-8 md:mt-0 {mobileNavOpen
+		class="justify-start flex md:flex flex-col md:flex-row space-y-8 md:space-y-0 space-x-0 md:space-x-8 mt-8 md:mt-0 {mobileNavOpen
 			? ''
 			: 'hidden'}"
 	>
