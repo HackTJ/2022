@@ -66,8 +66,9 @@
 				<sup class="text-3xl md:text-4xl font-mono align-super text-theme">9.0</sup>
 			</div>
 			<h3 class="text-white font-medium text-xl md:text-2xl w-3/4">
-				<span class="text-theme font-bold">April 16-17</span> <br /> Build the next greatest thing -
-				oh, and bring your friends along too.
+				<span class="text-theme font-bold">April 16-17, Yext Rosslyn</span>
+				<br />
+				Build the next greatest thing - oh, and bring your friends along too.
 			</h3>
 			<div class="inline-block mt-3 w-48">
 				<a
@@ -202,7 +203,7 @@
 	>
 		<div class="w-full lg:w-2/3">
 			<h1 class="text-5xl md:text-7xl font-black text-white">Location</h1>
-			<h3 class="text-xl font-black text-white mt-3">Yext DC Metro</h3>
+			<h3 class="text-xl font-black text-white mt-3">Yext Rosslyn</h3>
 			<h3 class="font-medium text-white mt-1">1101 Wilson Blvd, Arlington, VA 22209</h3>
 			<a
 				href="https://goo.gl/maps/DhX17rUhG27cAH9SA"
