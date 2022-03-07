@@ -66,7 +66,7 @@ export default [
 		portraitSrc: `${base}/teamportraits/TaeinKim.JPG`
 	},
 	{
-		name: 'Ananya Patel',
+		name: 'Ananya Pamal',
 		description:
 			'Ananya is a sophomore at TJ and this is her first year on the HackTJ team. She really enjoyed competing in Hack TJ her freshman year and is excited to help organize this year’s Hack TJ event! She is interested in astrophysics and cs. In her free time, Ananya enjoys dancing, reading, and baking.',
 		portraitSrc: `${base}/teamportraits/AnanyaPamal.JPG`
