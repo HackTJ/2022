@@ -7,6 +7,8 @@
 
 <a
 	{href}
+	target="_blank"
+	rel="noopener"
 	class="w-[300px] h-[150px] flex items-center flex-row mt-2 bg-black p-8 rounded-2xl shrink-0"
 >
 	<img {onclick} {alt} src={srcLogo} class="m-auto" />
