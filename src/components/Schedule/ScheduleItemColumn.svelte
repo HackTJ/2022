@@ -6,8 +6,8 @@
 	export let columnTime = moment();
 	cardData.sort((a, b) => a.time.unix() - b.time.unix());
 
-	const active = columnTime.isSame(moment(), 'hour');
-	const hour = columnTime.format('h A');
+	$: active = columnTime.isSame(moment(), 'hour');
+	$: hour = columnTime.format('h A');
 
 	let columnOpen = true;
 	function onButtonClick() {

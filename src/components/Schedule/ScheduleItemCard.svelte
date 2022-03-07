@@ -7,7 +7,7 @@
 	export let time = moment();
 	export let joinLink = '';
 
-	const timeStr = time.format('h:mm');
+	$: timeStr = time.format('h:mm');
 </script>
 
 <div
