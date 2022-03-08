@@ -9,6 +9,7 @@
 	import Navbar from '../components/Navbar.svelte';
 	import Modal from 'svelte-simple-modal';
 	import { sponsors, teamMembers } from '../eventdata';
+	import {googleMapsKey} from '../keys/.'
 
 	// Sponsorship Tiers Code
 	const goldTierData = {
@@ -37,7 +38,7 @@
 </script>
 
 <svelte:head>
-	<script defer async src="https://maps.googleapis.com/maps/api/js?key=">
+	<script defer async src="https://maps.googleapis.com/maps/api/js?key={googleMapsKey}">
 	</script>
 </svelte:head>
 
