@@ -9,7 +9,7 @@
 	import Navbar from '../components/Navbar.svelte';
 	import Modal from 'svelte-simple-modal';
 	import { sponsors, teamMembers } from '../eventdata';
-	import {googleMapsKey} from '../keys/.'
+	import { googleMapsKey } from '../keys/.';
 
 	// Sponsorship Tiers Code
 	const goldTierData = {
