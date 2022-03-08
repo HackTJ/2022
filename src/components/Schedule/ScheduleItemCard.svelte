@@ -1,10 +1,10 @@
 <script>
 	import Dots from './Dots.svelte';
-	import moment from 'moment';
+	import dayjs from 'dayjs';
 
 	export let active = true;
 	export let title = '';
-	export let time = moment();
+	export let time = dayjs();
 	export let joinLink = '';
 
 	$: timeStr = time.format('h:mm');

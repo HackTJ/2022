@@ -1,12 +1,12 @@
 <script>
-	import moment from 'moment';
+	import dayjs from 'dayjs';
 	import ScheduleItemCard from './ScheduleItemCard.svelte';
 
 	export let cardData = [];
-	export let columnTime = moment();
+	export let columnTime = dayjs();
 	cardData.sort((a, b) => a.time.unix() - b.time.unix());
 
-	$: active = columnTime.isSame(moment(), 'hour');
+	$: active = columnTime.isSame(dayjs(), 'hour');
 	$: hour = columnTime.format('h A');
 
 	let columnOpen = true;

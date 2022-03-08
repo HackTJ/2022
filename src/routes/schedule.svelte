@@ -12,16 +12,15 @@
 	dates.forEach((date) => {
 		cardData[date] = {};
 		const matchedDate = schedule.filter(({ time }) => time.format('M/DD/YYYY') === date);
-		const uniqueHours = [...new Set(matchedDate.map(({ time }) => time.hours()))];
+		const uniqueHours = [...new Set(matchedDate.map(({ time }) => time.hour()))];
 
 		const min = Math.min(...uniqueHours);
 		const max = Math.max(...uniqueHours);
 
 		for (let h = min; h <= max; h++) {
-			const matchedHours = matchedDate.filter(({ time }) => time.hours() == h);
+			const matchedHours = matchedDate.filter(({ time }) => time.hour() == h);
 			// Get the time for the column label
-			let columnTime = matchedDate[0].time.clone();
-			columnTime.set({ hour: h, minute: 0, second: 0, millisecond: 0 });
+			let columnTime = matchedDate[0].time.clone().set('hour', h);
 			// Set the data
 			cardData[date][h] = { columnTime, data: matchedHours };
 		}
