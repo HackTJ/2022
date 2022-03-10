@@ -5,7 +5,7 @@ NORMAL=$(printf '\033[m')
 
 # export NODE_DEBUG=gh-pages
 timestamp=$(pnpm node -e "console.log(new Date())")
-gh_pages_args="--dist build --dotfiles --remove .DS_Store --message \"Update $timestamp\""
+gh_pages_args="--dist build --dotfiles --message \"Update $timestamp\""
 
 log_and_run_cmd () {
   echo -e "+ ${BLUE}$*${NORMAL}" && eval "$@"
