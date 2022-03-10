@@ -7,7 +7,7 @@
 
 <section class="text-blueberry-200 flex flex-col justify-between min-h-screen">
 	<div class="p-8 md:p-12 flex flex-col grow">
-		<a href={`${base}/`}><Home width="32px" class="text-theme" /></a>
+		<a href={base}><Home width="32px" class="text-theme" /></a>
 		<h1 class="text-5xl font-black text-white my-8">Registration</h1>
 		Registration opened on March 6, 2022 at 8:00 pm EST and will close on March 20, 2022 at 11:59 pm
 		EST.

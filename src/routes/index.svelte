@@ -34,9 +34,9 @@
 		{ text: 'Sponsors', href: '#sponsors' },
 		{ text: 'Team', href: '#team' },
 		{ text: 'Location', href: '#location' },
-		{ text: 'FAQ', href: `${base}/faq`, button: {class: "bg-theme"} },
-		{ text: 'Schedule', href: `${base}/schedule`, button: {class: "bg-spruce-200"} },
-		{ text: 'Resources', href: `${base}/resources`, button: {class: "bg-blueberry-200"} },
+		{ text: 'FAQ', href: `${base}/faq`, button: { class: 'bg-theme' } },
+		{ text: 'Schedule', href: `${base}/schedule`, button: { class: 'bg-spruce-200' } },
+		{ text: 'Resources', href: `${base}/resources`, button: { class: 'bg-blueberry-200' } }
 	];
 </script>
 
@@ -63,7 +63,7 @@
 		class="flex justify-start lg:justify-around items-center mt-18 px-8 md:px-12 h-[calc(100%_-_8rem)]"
 	>
 		<div class="flex flex-col">
-			<img alt="TJHSST Dome" src={`${base}/dome.svg`} class="block lg:hidden mb-3 w-24 h-24" />
+			<img alt="TJHSST Dome" src="{base}/dome.svg" class="block lg:hidden mb-3 w-24 h-24" />
 			<div class="text-white font-bold text-6xl md:text-8xl">
 				HackTJ
 				<!-- TODO: `Overpass Mono`: -->
@@ -91,7 +91,7 @@
 				>
 			</div>
 		</div>
-		<img alt="TJHSST Dome" src={`${base}/dome.svg`} class="hidden lg:flex self-end max-h-full" />
+		<img alt="TJHSST Dome" src="{base}/dome.svg" class="hidden lg:flex self-end max-h-full" />
 	</div>
 	<div class="w-full absolute bottom-0 lg:w-auto lg:relative">
 		<svg
@@ -136,12 +136,12 @@
 	</div>
 	<div class="flex flex-col md:flex-row mt-6 space-y-3 md:space-y-0 space-x-0 md:space-x-3">
 		<a
-			href={`${base}/faq`}
+			href="{base}/faq"
 			class="block text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl px-8"
 			>FAQ</a
 		>
 		<a
-			href={`${base}/resources`}
+			href="{base}/resources"
 			class="block text-center py-3 bg-spruce-200 text-blueberry-800 text-xl font-bold rounded-2xl px-8"
 			>Beginner Resources</a
 		>

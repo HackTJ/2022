@@ -38,18 +38,22 @@
 			? ''
 			: 'hidden'}"
 	>
-		<div class="flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 space-x-0 lg:space-x-8">
+		<div
+			class="flex flex-col lg:flex-row items-center space-y-8 lg:space-y-0 space-x-0 lg:space-x-8"
+		>
 			{#each navItems as { href, text, button }}
 				{#if !button}
 					<a {href} on:click={handleNavAnchorClick} class="hover:text-theme">{text}</a>
 				{/if}
 			{/each}
 		</div>
-		<div class="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 space-x-0 lg:space-x-4 w-full">
+		<div
+			class="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 space-x-0 lg:space-x-4 w-full"
+		>
 			{#each navItems as { href, text, button }}
 				{#if button}
 					<a
-						href="{href}"
+						{href}
 						class="block text-center py-2 px-6 text-blueberry-800 font-bold rounded-2xl w-full lg:w-auto {button.class}"
 						>{text}</a
 					>
