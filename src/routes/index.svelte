@@ -33,7 +33,10 @@
 		{ text: 'About', href: '#about' },
 		{ text: 'Sponsors', href: '#sponsors' },
 		{ text: 'Team', href: '#team' },
-		{ text: 'Location', href: '#location' }
+		{ text: 'Location', href: '#location' },
+		{ text: 'FAQ', href: `${base}/faq`, button: {class: "bg-theme"} },
+		{ text: 'Schedule', href: `${base}/schedule`, button: {class: "bg-spruce-200"} },
+		{ text: 'Resources', href: `${base}/resources`, button: {class: "bg-blueberry-200"} },
 	];
 </script>
 
@@ -73,14 +76,14 @@
 			</h3>
 			<div class="inline-block mt-3 w-48">
 				<a
-					href={`${base}/register`}
+					href="{base}/register"
 					target="_blank"
 					rel="noopener noreferred"
 					class="block text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl"
 					>Register</a
 				>
 				<a
-					href={`${base}/schedule`}
+					href="{base}/schedule"
 					target="_blank"
 					rel="noopener noreferred"
 					class="block mt-2 text-center py-3 bg-spruce-100 text-blueberry-800 text-xl font-bold rounded-2xl"
