@@ -58,7 +58,7 @@
 				{/each}
 			</div>
 		</div>
-		<div class="flex space-x-8 overflow-auto h-full px-8 md:px-12 pb-8 md:pb-12 pt-6 grow">
+		<div class="flex space-x-8 overflow-auto h-full px-8 md:px-12 pb-8 md:pb-12 pt-6 grow scrollbar-thin scrollbar-thumb-blueberry-200 scrollbar-track-blackberry-500">
 			{#each hourlyData as { data, columnTime }}
 				<ScheduleItemColumn cardData={data} {columnTime} />
 			{/each}
