@@ -142,7 +142,7 @@
 		>
 		<a
 			href="{base}/resources"
-			class="block text-center py-3 bg-spruce-200 text-blueberry-800 text-xl font-bold rounded-2xl px-8"
+			class="block text-center py-3 bg-blueberry-200 text-blueberry-800 text-xl font-bold rounded-2xl px-8"
 			>Beginner Resources</a
 		>
 	</div>
