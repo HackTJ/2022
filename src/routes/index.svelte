@@ -7,6 +7,7 @@
 	import GoogleMap from '../components/Index/GoogleMap.svelte';
 	import Footer from '../components/Footer.svelte';
 	import Navbar from '../components/Navbar.svelte';
+	import CloseButton from '../components/Index/CloseButton.svelte';
 	import Modal from 'svelte-simple-modal';
 	import { sponsors, teamMembers } from '../eventdata';
 	import { googleMapsKey } from '../keys/.';
@@ -187,8 +188,8 @@
 		unstyled={true}
 		classBg="fixed top-0 left-0 w-screen h-screen flex flex-col justify-center bg-blackberry-800/[0.8] z-10"
 		classWindowWrap="relative m-4 max-h-full"
-		classWindow="rounded-2xl bg-theme text-black p-8 max-w-xl max-h-full m-auto"
-		closeButton={false}
+		classWindow="rounded-2xl bg-theme text-black p-6 md:p-8 max-w-xl max-h-full m-auto relative"
+		closeButton={CloseButton}
 	>
 		<div
 			class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8"

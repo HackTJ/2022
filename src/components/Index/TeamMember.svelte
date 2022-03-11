@@ -15,9 +15,10 @@
 <!-- TODO: Dialog Popup -->
 <div class={classNames}>
 	<img
-		class="max-h-[256px] w-full object-center object-cover rounded-2xl"
+		class="max-h-[256px] w-full object-center object-cover rounded-2xl hover:brightness-50 cursor-pointer"
 		src={portraitSrc}
 		alt="A team member"
+		on:click={openAboutInfo}
 	/>
 	<div class="flex flex-row h-16 items-center justify-between mt-2">
 		<h4 class="text font-medium font-mono">{name}</h4>
