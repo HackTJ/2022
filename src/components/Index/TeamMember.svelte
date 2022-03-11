@@ -15,7 +15,7 @@
 <!-- TODO: Dialog Popup -->
 <div class={classNames}>
 	<img
-		class="max-h-[256px] w-full object-center object-cover rounded-2xl hover:brightness-50 cursor-pointer"
+		class="max-h-[256px] w-full object-center object-cover rounded-2xl hover:brightness-75 cursor-pointer transition-all duration-100 ease-in-out"
 		src={portraitSrc}
 		alt="A team member"
 		on:click={openAboutInfo}
