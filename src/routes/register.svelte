@@ -10,12 +10,23 @@
 	<div class="p-8 md:p-12 flex flex-col grow">
 		<a href="{base}/"><Home width="32px" class="text-theme" /></a>
 		<h1 class="text-5xl font-black text-white mt-8 mb-2">Registration</h1>
-		<p>Registration opened on March 6, 2022 at 8:00 pm EST and will close on March 20, 2022 at 11:59 pm
-			EST.</p>
+		<p>
+			Registration opened on March 6, 2022 at 8:00 pm EST and will close on March 20, 2022 at 11:59
+			pm EST. All attendees must adhere to the <a
+				class="text-theme underline"
+				href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+				target="_blank"
+				rel="noreferrer">MLH Code of Conduct</a
+			>.
+		</p>
 		<div
 			class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 space-x-0 lg:space-x-12 mt-4 h-full grow"
 		>
-			<RegistrationColumn title="Participant" link="https://forms.gle/gSKmo9ptgAi5rF636" linkText="Participant Registration">
+			<RegistrationColumn
+				title="Participant"
+				link="https://forms.gle/gSKmo9ptgAi5rF636"
+				linkText="Participant Registration"
+			>
 				<p>
 					Participants must be current high school students. Computer science and engineering
 					experience is not necessary, as we&#39;ll have workshops and mentors so you can learn.
@@ -23,7 +34,11 @@
 					decisions will be made based on a variety of factors including the date/time you register.
 				</p>
 			</RegistrationColumn>
-			<RegistrationColumn title="Mentor/Judge/Volunteer" link="https://forms.gle/R5cgvRmeKSaVhZNY9" linkText="Mentor/Judge/Volunteer Registration">
+			<RegistrationColumn
+				title="Mentor/Judge/Volunteer"
+				link="https://forms.gle/R5cgvRmeKSaVhZNY9"
+				linkText="Mentor/Judge/Volunteer Registration"
+			>
 				<p>
 					Judges must be present during the entire judging process (5:00 p.m. to 7:30 p.m. on
 					Sunday), but not necessarily during the entire hackathon. Computer science and engineering
@@ -35,17 +50,24 @@
 					online the entire time. Computer science and engineering experience is required.
 				</p>
 			</RegistrationColumn>
-			<RegistrationColumn title="Photographer" link="https://docs.google.com/forms/d/e/1FAIpQLSd-Q9vTl-xkA2DhxWSOO2GcBXTD9CcCr-juxe27faky3gLHdw/viewform?usp=sf_link" linkText="Photographer">
+			<RegistrationColumn
+				title="Photographer"
+				link="https://docs.google.com/forms/d/e/1FAIpQLSd-Q9vTl-xkA2DhxWSOO2GcBXTD9CcCr-juxe27faky3gLHdw/viewform?usp=sf_link"
+				linkText="Photographer"
+			>
 				<p>
-					Photographers are only needed for 2 hours at a time (aside from the 2.5 hr shift on Sunday), but can sign up for multiple shifts. Participants can also be photographers. 
+					Photographers are only needed for 2 hours at a time (aside from the 2.5 hr shift on
+					Sunday), but can sign up for multiple shifts. Participants can also be photographers.
 				</p>
 				<br />
 				<p>
-					Photographers who are not participants will be given food and sponsor swag, but are NOT allowed to sign up for the 10pm-12am or 12am-2pm shifts. 
+					Photographers who are not participants will be given food and sponsor swag, but are NOT
+					allowed to sign up for the 10pm-12am or 12am-2pm shifts.
 				</p>
 				<br />
 				<p>
-					This year, because of county regulations, only photographers who are part of Fairfax County Public Schools will be able to attend the in-person event. 
+					This year, because of county regulations, only photographers who are part of Fairfax
+					County Public Schools will be able to attend the in-person event.
 				</p>
 			</RegistrationColumn>
 		</div>
