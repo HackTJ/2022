@@ -12,7 +12,7 @@
 
 <div
 	class="w-[300px] p-6 h-48 rounded-2xl flex flex-col justify-between items-start relative {active
-		? 'bg-theme text-black'
+		? 'bg-theme-100 text-black'
 		: 'bg-black text-white'}"
 >
 	<Dots
@@ -28,7 +28,7 @@
 			target="_blank"
 			rel="noopener noreferred"
 			class="block mt-2 text-center py-2 px-6 font-bold rounded-xl {active
-				? 'bg-black text-theme'
+				? 'bg-black text-theme-100'
 				: 'bg-white text-black'}"
 			href={joinLink}
 		>

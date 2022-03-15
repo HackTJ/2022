@@ -4,14 +4,24 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		// TODO: don't hard-code palettes
-		// https://github.com/sparkpunk/huey/blob/bd7ce66edfa312924b05968b0657afb1f144a3a5/src/scripts/palette.js#L41-L73
+		// use https://huey.design/ to convert a single color to a color palette
+		// (https://github.com/sparkpunk/huey/blob/bd7ce66edfa312924b05968b0657afb1f144a3a5/src/scripts/palette.js#L41-L73)
 		extend: {
 			colors: {
 				transparent: 'transparent',
 				current: 'currentColor',
-				theme: '#fed049',
-				themedarker: '#d9b23f',
+				theme: {
+					50: '#fee2a1',
+					100: '#fed049',
+					200: '#d5af3d',
+					300: '#bb9a36',
+					400: '#997e2c',
+					500: '#806925',
+					600: '#6c591f',
+					700: '#4c3f16',
+					800: '#362c10',
+					900: '#261f0b'
+				},
 				strawberry: {
 					// '#FB6376',
 					50: '#fddddf',

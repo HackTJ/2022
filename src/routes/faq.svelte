@@ -8,9 +8,9 @@
 
 <section class="text-blueberry-200 flex flex-col justify-between min-h-screen">
 	<div class="p-8 md:p-12">
-		<a href="{base}/" class="text-theme hover:text-themedarker"><Home width="32px" /></a>
+		<a href="{base}/" class="text-theme-100 hover:text-theme-200"><Home width="32px" /></a>
 		<div class="flex items-center mt-8">
-			<div class="flex bg-theme rounded-2xl h-16 w-16 items-center mr-4">
+			<div class="flex bg-theme-100 rounded-2xl h-16 w-16 items-center mr-4">
 				<div class="m-auto font-black text-blackberry-800 text-center text-4xl">?</div>
 			</div>
 			<h1 class="text-5xl font-black text-white">FAQ</h1>

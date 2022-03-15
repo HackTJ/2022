@@ -35,7 +35,7 @@
 		{ text: 'Sponsors', href: '#sponsors' },
 		{ text: 'Team', href: '#team' },
 		{ text: 'Location', href: '#location' },
-		{ text: 'FAQ', href: `${base}/faq`, button: { class: 'bg-theme hover:bg-themedarker' } },
+		{ text: 'FAQ', href: `${base}/faq`, button: { class: 'bg-theme-100 hover:bg-theme-200' } },
 		{
 			text: 'Schedule',
 			href: `${base}/schedule`,
@@ -76,17 +76,17 @@
 			<div class="text-white font-bold text-6xl md:text-8xl">
 				HackTJ
 				<!-- TODO: `Overpass Mono`: -->
-				<sup class="text-3xl md:text-4xl font-mono align-super text-theme">9.0</sup>
+				<sup class="text-3xl md:text-4xl font-mono align-super text-theme-100">9.0</sup>
 			</div>
 			<h3 class="text-white font-medium text-xl md:text-2xl w-3/4">
-				<span class="text-theme font-bold">April 16-17, Yext Rosslyn</span>
+				<span class="text-theme-100 font-bold">April 16-17, Yext Rosslyn</span>
 				<br />
 				Build the next greatest thing - oh, and bring your friends along too.
 			</h3>
 			<div class="inline-block mt-3 w-48">
 				<a
 					href="{base}/register"
-					class="block text-center py-3 bg-theme hover:bg-themedarker text-blueberry-800 text-xl font-bold rounded-2xl"
+					class="block text-center py-3 bg-theme-100 hover:bg-theme-200 text-blueberry-800 text-xl font-bold rounded-2xl"
 					>Register</a
 				>
 				<a
@@ -123,7 +123,7 @@
 <!-- About Section -->
 <section class="mt-8 p-8 md:p-12 text-blueberry-200" id="about">
 	<h1 class="text-4xl md:text-6xl lg:text-7xl font-black">
-		Welcome to the Future Generation of <span class="text-theme">Coders</span>
+		Welcome to the Future Generation of <span class="text-theme-100">Coders</span>
 	</h1>
 	<div class="flex flex-col lg:flex-row mt-4 text-lg space-y-8 lg:space-y-0 lg:space-x-8">
 		<p class="flex-1">
@@ -142,7 +142,7 @@
 	<div class="flex flex-col md:flex-row mt-6 space-y-3 md:space-y-0 space-x-0 md:space-x-3">
 		<a
 			href="{base}/faq"
-			class="block text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl px-8 hover:bg-themedarker"
+			class="block text-center py-3 bg-theme-100 text-blueberry-800 text-xl font-bold rounded-2xl px-8 hover:bg-theme-200"
 			>FAQ</a
 		>
 		<a
@@ -177,12 +177,12 @@
 		<h1 class="text-4xl md:text-6xl font-black text-white">Sponsors</h1>
 		<h3 class="mt-2 text-xl md:text-2xl font-bold text-blueberry-200">
 			Interested in sponsoring? Check out our <a
-				class="underline text-theme"
+				class="underline text-theme-100"
 				href="{base}/sponsorship9.0.pdf">9.0 sponsorship packet</a
 			>
 			or email us at
-			<a class="underline text-theme" href="mailto:sponsor@hacktj.org">sponsor@hacktj.org</a> if you're
-			interested or have any questions!
+			<a class="underline text-theme-100" href="mailto:sponsor@hacktj.org">sponsor@hacktj.org</a> if
+			you're interested or have any questions!
 		</h3>
 	</div>
 	{#each tierSectionData as { bg, cards, title }}
@@ -198,7 +198,7 @@
 		unstyled={true}
 		classBg="fixed top-0 left-0 w-screen h-screen flex flex-col justify-center bg-blackberry-800/[0.8] z-10"
 		classWindowWrap="relative m-4 max-h-full"
-		classWindow="rounded-2xl bg-theme text-black p-6 md:p-8 max-w-xl max-h-full m-auto relative"
+		classWindow="rounded-2xl bg-theme-100 text-black p-6 md:p-8 max-w-xl max-h-full m-auto relative"
 		closeButton={CloseButton}
 	>
 		<div
@@ -224,7 +224,7 @@
 				href="https://goo.gl/maps/DhX17rUhG27cAH9SA"
 				target="_blank"
 				rel="noopener noreferred"
-				class="block mt-4 text-center py-3 bg-theme hover:bg-themedarker text-blueberry-800 text-xl font-bold rounded-2xl"
+				class="block mt-4 text-center py-3 bg-theme-100 hover:bg-theme-200 text-blueberry-800 text-xl font-bold rounded-2xl"
 				>Open in Google Maps</a
 			>
 		</div>

@@ -43,7 +43,7 @@
 		>
 			{#each navItems as { href, text, button }}
 				{#if !button}
-					<a {href} on:click={handleNavAnchorClick} class="hover:text-theme">{text}</a>
+					<a {href} on:click={handleNavAnchorClick} class="hover:text-theme-100">{text}</a>
 				{/if}
 			{/each}
 		</div>
