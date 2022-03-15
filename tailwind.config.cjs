@@ -11,6 +11,7 @@ module.exports = {
 				transparent: 'transparent',
 				current: 'currentColor',
 				theme: '#fed049',
+				themedarker: '#d9b23f',
 				strawberry: {
 					// '#FB6376',
 					50: '#fddddf',

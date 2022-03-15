@@ -35,9 +35,9 @@
 		{ text: 'Sponsors', href: '#sponsors' },
 		{ text: 'Team', href: '#team' },
 		{ text: 'Location', href: '#location' },
-		{ text: 'FAQ', href: `${base}/faq`, button: { class: 'bg-theme' } },
-		{ text: 'Schedule', href: `${base}/schedule`, button: { class: 'bg-spruce-200' } },
-		{ text: 'Resources', href: `${base}/resources`, button: { class: 'bg-blueberry-200' } }
+		{ text: 'FAQ', href: `${base}/faq`, button: { class: 'bg-theme hover:bg-themedarker' } },
+		{ text: 'Schedule', href: `${base}/schedule`, button: { class: 'bg-spruce-200 hover:bg-spruce-300' } },
+		{ text: 'Resources', href: `${base}/resources`, button: { class: 'bg-blueberry-200 hover:bg-blueberry-300' } }
 	];
 </script>
 
@@ -78,16 +78,12 @@
 			<div class="inline-block mt-3 w-48">
 				<a
 					href="{base}/register"
-					target="_blank"
-					rel="noopener noreferred"
-					class="block text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl"
+					class="block text-center py-3 bg-theme hover:bg-themedarker text-blueberry-800 text-xl font-bold rounded-2xl"
 					>Register</a
 				>
 				<a
 					href="{base}/schedule"
-					target="_blank"
-					rel="noopener noreferred"
-					class="block mt-2 text-center py-3 bg-spruce-100 text-blueberry-800 text-xl font-bold rounded-2xl"
+					class="block mt-2 text-center py-3 bg-spruce-100 hover:bg-spruce-200 text-blueberry-800 text-xl font-bold rounded-2xl"
 					>Schedule</a
 				>
 			</div>
@@ -138,12 +134,12 @@
 	<div class="flex flex-col md:flex-row mt-6 space-y-3 md:space-y-0 space-x-0 md:space-x-3">
 		<a
 			href="{base}/faq"
-			class="block text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl px-8"
+			class="block text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl px-8 hover:bg-themedarker"
 			>FAQ</a
 		>
 		<a
 			href="{base}/resources"
-			class="block text-center py-3 bg-blueberry-200 text-blueberry-800 text-xl font-bold rounded-2xl px-8"
+			class="block text-center py-3 bg-blueberry-200 text-blueberry-800 text-xl font-bold rounded-2xl px-8 hover:bg-blueberry-300"
 			>Beginner Resources</a
 		>
 	</div>
@@ -172,7 +168,7 @@
 	<div class="p-8 md:p-12">
 		<h1 class="text-4xl md:text-6xl font-black text-white">Sponsors</h1>
 		<h3 class="mt-2 text-xl md:text-2xl font-bold text-blueberry-200">
-			It wouldn't have been possible without these guys
+			Interested in sponsoring? Check out our <a class="underline text-theme" href="https://hacktj.org/2021/sponsorship8.0.pdf">8.0 sponsorship packet</a> and email us at <a class="underline text-theme" href="mailto: sponsor@hacktj.org">sponsor@hacktj.org</a> if you're interested or have any questions!
 		</h3>
 	</div>
 	{#each tierSectionData as { bg, cards, title }}
@@ -214,7 +210,7 @@
 				href="https://goo.gl/maps/DhX17rUhG27cAH9SA"
 				target="_blank"
 				rel="noopener noreferred"
-				class="block mt-4 text-center py-3 bg-theme text-blueberry-800 text-xl font-bold rounded-2xl"
+				class="block mt-4 text-center py-3 bg-theme hover:bg-themedarker text-blueberry-800 text-xl font-bold rounded-2xl"
 				>Open in Google Maps</a
 			>
 		</div>
