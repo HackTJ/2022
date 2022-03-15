@@ -36,8 +36,16 @@
 		{ text: 'Team', href: '#team' },
 		{ text: 'Location', href: '#location' },
 		{ text: 'FAQ', href: `${base}/faq`, button: { class: 'bg-theme hover:bg-themedarker' } },
-		{ text: 'Schedule', href: `${base}/schedule`, button: { class: 'bg-spruce-200 hover:bg-spruce-300' } },
-		{ text: 'Resources', href: `${base}/resources`, button: { class: 'bg-blueberry-200 hover:bg-blueberry-300' } }
+		{
+			text: 'Schedule',
+			href: `${base}/schedule`,
+			button: { class: 'bg-spruce-200 hover:bg-spruce-300' }
+		},
+		{
+			text: 'Resources',
+			href: `${base}/resources`,
+			button: { class: 'bg-blueberry-200 hover:bg-blueberry-300' }
+		}
 	];
 </script>
 
@@ -168,7 +176,13 @@
 	<div class="p-8 md:p-12">
 		<h1 class="text-4xl md:text-6xl font-black text-white">Sponsors</h1>
 		<h3 class="mt-2 text-xl md:text-2xl font-bold text-blueberry-200">
-			Interested in sponsoring? Check out our <a class="underline text-theme" href="https://hacktj.org/2021/sponsorship8.0.pdf">8.0 sponsorship packet</a> and email us at <a class="underline text-theme" href="mailto: sponsor@hacktj.org">sponsor@hacktj.org</a> if you're interested or have any questions!
+			Interested in sponsoring? Check out our <a
+				class="underline text-theme"
+				href="{base}/sponsorship9.0.pdf">9.0 sponsorship packet</a
+			>
+			or email us at
+			<a class="underline text-theme" href="mailto:sponsor@hacktj.org">sponsor@hacktj.org</a> if you're
+			interested or have any questions!
 		</h3>
 	</div>
 	{#each tierSectionData as { bg, cards, title }}

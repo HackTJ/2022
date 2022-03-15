@@ -9,7 +9,7 @@
 
 <section class="text-blueberry-200 flex flex-col justify-between min-h-screen">
 	<div class="p-8 md:p-12">
-		<a href="{base}/" class="text-theme hover:text-themedarker"><Home width="32px"/></a>
+		<a href="{base}/" class="text-theme hover:text-themedarker"><Home width="32px" /></a>
 		<h1 class="text-5xl font-black text-white mt-8">Beginner Resources</h1>
 		<div
 			class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8"
