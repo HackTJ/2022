@@ -13,7 +13,7 @@
 		href={link}
 		target="_blank"
 		rel="noopener noreferred"
-		class="block mt-4 text-center py-3 px-4 bg-theme-100 text-blueberry-800 font-bold rounded-2xl"
+		class="block mt-4 text-center py-3 px-4 bg-theme-100 hover:bg-theme-200 text-blueberry-800 font-bold rounded-2xl"
 		>{linkText}</a
 	>
 </div>

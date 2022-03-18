@@ -27,8 +27,8 @@
 				on:click={onButtonClick}
 				disabled={!cardData.length}
 				class="rounded-full text-2xl font-bold h-8 w-8 flex items-center m-auto mt-1 text-black {active
-					? 'bg-theme-100'
-					: 'bg-spruce-200'}"
+					? 'bg-theme-100 hover:bg-theme-200'
+					: 'bg-spruce-200 hover:bg-spruce-300'}"
 			>
 				<div class="m-auto">{columnOpen && cardData.length ? '-' : '+'}</div>
 			</button>

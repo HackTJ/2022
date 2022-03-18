@@ -31,7 +31,7 @@
 >
 	<!-- TODO: Mobile dropdown -->
 	<div on:click={toggleNav}>
-		<svelte:component this={mobileNavOpen ? Close : Menu} width="32px" class="static lg:hidden" />
+		<svelte:component this={mobileNavOpen ? Close : Menu} width="32px" class="static lg:hidden text-white hover:text-theme-100" />
 	</div>
 	<div
 		class="justify-start flex lg:flex flex-col lg:flex-row items-center mt-8 lg:mt-0 space-y-8 lg:space-y-0 space-x-0 lg:space-x-8 {mobileNavOpen

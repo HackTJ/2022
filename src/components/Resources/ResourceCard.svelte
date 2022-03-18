@@ -11,7 +11,7 @@
 		{href}
 		target="_blank"
 		rel="noopener noreferred"
-		class="block mt-4 text-center py-4 px-6 font-bold rounded-xl bg-black text-white w-full"
+		class="block mt-4 text-center py-4 px-6 font-bold rounded-xl bg-black hover:bg-blackberry-800 text-white w-full"
 	>
 		Open Resource
 	</a>

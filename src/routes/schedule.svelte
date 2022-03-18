@@ -30,8 +30,8 @@
 	let currentDate = Object.keys(cardData)[currentDateIndex];
 	let hourlyData = Object.values(cardData[currentDate]);
 
-	const activeButtonClass = 'bg-theme-100 text-blueberry-800';
-	const inactiveButtonClass = 'border-2 border-white text-white';
+	const activeButtonClass = 'bg-theme-100 text-blueberry-800 hover:bg-theme-200';
+	const inactiveButtonClass = 'border-2 border-white text-white hover:bg-blackberry-500';
 
 	function updateIndex(i) {
 		currentDateIndex = i;
@@ -43,7 +43,7 @@
 <section class="text-blueberry-200 flex flex-col justify-between min-h-screen">
 	<div class="h-full grow flex flex-col">
 		<div class="px-8 md:px-12 pt-8 md:pt-12">
-			<a href="{base}/" class="hover:text-theme-200"><Home width="32px" class="text-theme-100" /></a
+			<a href="{base}/"><Home width="32px" class="text-theme-100 hover:text-theme-200" /></a
 			>
 			<h1 class="pt-8 md:pt-8 text-5xl font-black text-white">Last Year's Schedule</h1>
 			<div class="flex flex-col md:flex-row space-x-0 md:space-x-4 space-y-4 md:space-y-0 mt-4">
