@@ -8,23 +8,32 @@ export default {
 	gold: [
 		{
 			src: `${base}/sponsorlogos/eastbanc.png`,
-			alt: 'East Banc Sponsor Logo',
+			alt: 'EastBanc Technologies Logo',
 			href: 'https://eastbanctech.com/'
 		}
 	],
 	silver: [
-		/**EMPTY WAA */
+		{
+			src: `${base}/sponsorlogos/janestreet.png`,
+			alt: 'Jane Street Logo',
+			href: 'https://www.janestreet.com/'
+		}
 	],
 	bronze: [
 		{
 			src: `${base}/sponsorlogos/collinsaero.png`,
-			alt: 'Collins Aerospace Sponsor Logo',
+			alt: 'Collins Aerospace Logo',
 			href: 'https://www.collinsaerospace.com/'
 		},
 		{
 			src: `${base}/sponsorlogos/blueridge.png`,
-			alt: 'Blueridge Networks Sponsor Logo',
+			alt: 'Blue Ridge Networks Logo',
 			href: 'https://www.blueridgenetworks.com/'
+		},
+		{
+			src: `${base}/sponsorlogos/alarmcom.png`,
+			alt: 'Alarm.com Logo',
+			href: 'https://alarm.com/'
 		}
 	]
 };

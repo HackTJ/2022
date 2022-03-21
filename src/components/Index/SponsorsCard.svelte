@@ -2,7 +2,6 @@
 	export let alt;
 	export let srcLogo;
 	export let href;
-	export let onclick = () => {};
 </script>
 
 <a
@@ -11,5 +10,5 @@
 	rel="noopener"
 	class="w-[225px] h-[125px] flex items-center flex-row mt-2 bg-black p-8 rounded-2xl shrink-0"
 >
-	<img {onclick} {alt} src={srcLogo} class="m-auto" />
+	<img {alt} src={srcLogo} />
 </a>
