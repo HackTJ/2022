@@ -7,7 +7,7 @@
 	export let time = dayjs();
 	export let joinLink = '';
 
-	$: timeStr = time.format('h:mm');
+	$: timeStr = time.format('h:mm a');
 </script>
 
 <div
