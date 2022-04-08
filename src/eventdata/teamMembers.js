@@ -36,7 +36,7 @@ export default [
 		portraitSrc: `${base}/teamportraits/SamhitaVinay.JPG`
 	},
 	{
-		name: 'Anika Karparapu',
+		name: 'Anika Karpurapu',
 		description:
 			'Anika is a senior at TJ and works on internet/tech, merch/branding, and sponsorships. She attended HackTJ her freshman year, had an amazing time, and now this is her second year on the organizing team. To pursue her interests, Anika serves as the Co-President of CyberPatriot, the Chemistry President of Women Interested in Science and Engineering (WISE), and is part of the TJ Latin cult. In her free time, you can find her running, playing with her puppy, or baking.',
 		portraitSrc: `${base}/teamportraits/AnikaKarparapu.JPG`
