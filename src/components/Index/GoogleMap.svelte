@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 
 	export let zoom = 18;
-	export let latlng = { lat: 38.895271, lng: -77.069702 }; // YEXT HQ Location
+	export let latlng = { lat: 38.8184178, lng: -77.170153 }; // TJHSST Location
 
 	// TODO: Styling Map
 	onMount(async () => {
