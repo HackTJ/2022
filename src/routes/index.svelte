@@ -2,12 +2,12 @@
 	import { base } from '$app/paths';
 
 	import TeamMember from '../components/Index/TeamMember.svelte';
-	// import AboutCard from "../components/AboutCard.svelte";
 	import SponsorsReel from '../components/Index/SponsorsReel.svelte';
 	import GoogleMap from '../components/Index/GoogleMap.svelte';
 	import Footer from '../components/Footer.svelte';
 	import Navbar from '../components/Navbar.svelte';
 	import CloseButton from '../components/Index/CloseButton.svelte';
+	import AboutCard from '../components/Index/AboutCard.svelte';
 	import Modal from 'svelte-simple-modal';
 	import { sponsors, teamMembers } from '../eventdata';
 	import { googleMapsKey } from '../keys/.';
@@ -188,6 +188,11 @@
 	{#each tierSectionData as { bg, cards, title }}
 		<SponsorsReel {bg} cardsData={cards} {title} />
 	{/each}
+	<div class="grid grid-cols-1 md:grid-cols-2 p-8 gap-8">
+			<AboutCard title={"echo3D Prize"}>
+				Sponsored by echoAR, this challenge will require you to use their AR/VR software in your hack. It can be for any application, but it must include their software.
+			</AboutCard>
+	</div>
 </section>
 
 <!-- Meet the team -->
