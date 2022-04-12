@@ -34,6 +34,31 @@ export default {
 			src: `${base}/sponsorlogos/alarmcom.png`,
 			alt: 'Alarm.com Logo',
 			href: 'https://alarm.com/'
+		},
+		{
+			src: `${base}/sponsorlogos/cvent.png`,
+			alt: 'Cvent Logo',
+			href: 'https://www.cvent.com/'
+		},
+		{
+			src: `${base}/sponsorlogos/replit.png`,
+			alt: 'Replit Logo',
+			href: 'https://replit.com/'
+		},
+		{
+			src: `${base}/sponsorlogos/daggeranalytics.png`,
+			alt: 'Dagger Analytics Logo',
+			href: 'https://www.daggeranalytics.com/'
+		},
+		{
+			src: `${base}/sponsorlogos/mindpointgroup.png`,
+			alt: 'MindPoint Group Logo',
+			href: 'https://www.mindpointgroup.com/'
+		},
+		{
+			src: `${base}/sponsorlogos/ultrapress.png`,
+			alt: 'UltraPress Logo',
+			href: 'https://ultrapress.com/'
 		}
 	]
 };
