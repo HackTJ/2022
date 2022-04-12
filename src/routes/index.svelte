@@ -79,7 +79,7 @@
 				<sup class="text-3xl md:text-4xl font-mono align-super text-theme-100">9.0</sup>
 			</div>
 			<h3 class="text-white font-medium text-xl md:text-2xl w-3/4">
-				<span class="text-theme-100 font-bold">April 16-17, Yext Rosslyn</span>
+				<span class="text-theme-100 font-bold">April 16-17, TJHSST</span>
 				<br />
 				Build the next greatest thing - oh, and bring your friends along too.
 			</h3>
