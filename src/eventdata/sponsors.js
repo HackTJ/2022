@@ -59,6 +59,20 @@ export default {
 			src: `${base}/sponsorlogos/ultrapress.png`,
 			alt: 'UltraPress Logo',
 			href: 'https://ultrapress.com/'
+		},
+	],
+	prizeSponsors: [
+		{
+			src: `${base}/sponsorlogos/echo3d.png`,
+			alt: 'Echo3D Logo',
+			href: 'https://www.echo3d.co/'
 		}
-	]
+	],
+	partners: [
+		{
+			src: `${base}/sponsorlogos/tjpartnership.png`,
+			alt: 'TJ Partnership Fund Logo',
+			href: 'https://www.tjpartnershipfund.org/'
+		}
+	],
 };
