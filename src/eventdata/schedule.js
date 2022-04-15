@@ -32,8 +32,28 @@ const scheduleItems = [
 		time: dayjs('4/16/2022 13:00', timeFormat)
 	},
 	{
-		title: 'Workshops Begin',
+		title: 'Workshop - Intro to Web Development',
 		time: dayjs('4/16/2022 14:00', timeFormat)
+	},
+	{
+		title: 'Workshop - Intro to Android Studio',
+		time: dayjs('4/16/2022 14:00', timeFormat)
+	},
+	{
+		title: 'Workshop - Intro to iOS Development',
+		time: dayjs('4/16/2022 14:00', timeFormat)
+	},
+	{
+		title: 'Workshop - Intro to Cloud Computing',
+		time: dayjs('4/16/2022 15:00', timeFormat)
+	},
+	{
+		title: 'Workshop - Convolutional Neural Networks',
+		time: dayjs('4/16/2022 15:00', timeFormat)
+	},
+	{
+		title: 'Workshop - NuVoice (Assistive Tech)',
+		time: dayjs('4/16/2022 15:00', timeFormat)
 	},
 	{
 		title: 'Afternoon Snack',
@@ -43,26 +63,22 @@ const scheduleItems = [
 		title: 'Dinner',
 		time: dayjs('4/16/2022 19:00', timeFormat)
 	},
+	{
+		title: 'Women in Tech Panel',
+		time: dayjs('4/16/2022 20:00', timeFormat)
+	},
+	{
+		title: 'Hackers Leave',
+		time: dayjs('4/16/2022 22:45', timeFormat)
+	},
 	// Day 2
-	{
-		title: 'Midnight Snack',
-		time: dayjs('4/17/2022 00:00', timeFormat)
-	},
-	{
-		title: 'Early Morning Snack',
-		time: dayjs('4/17/2022 04:00', timeFormat)
-	},
 	{
 		title: 'Hacking Ends',
 		time: dayjs('4/17/2022 08:00', timeFormat)
 	},
 	{
-		title: 'Breakfast',
-		time: dayjs('4/17/2022 08:00', timeFormat)
-	},
-	{
 		title: 'Judging Starts',
-		time: dayjs('4/17/2022 09:00', timeFormat)
+		time: dayjs('4/17/2022 09:30', timeFormat)
 	},
 	{
 		title: 'Closing Ceremony',

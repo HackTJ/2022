@@ -28,17 +28,23 @@
 		bg: 'bg-[#AF7A6D]',
 		cards: sponsors.bronze
 	};
-	const prizeSponsorsData = {
-		title: 'PRIZE SPONSORS',
+	const prizeTierData = {
+		title: 'PRIZE TIER',
 		bg: 'bg-[#DEDBD2]',
-		cards: sponsors.prizeSponsors
+		cards: sponsors.prize
 	};
 	const partnershipData = {
-		title: 'PARTNERSHIPS',
+		title: 'PARTNERS',
 		bg: 'bg-spruce-200',
 		cards: sponsors.partners
 	};
-	const tierSectionData = [goldTierData, silverTierData, bronzeTierData, prizeSponsorsData, partnershipData];
+	const tierSectionData = [
+		goldTierData,
+		silverTierData,
+		bronzeTierData,
+		prizeTierData,
+		partnershipData
+	];
 
 	const navItems = [
 		{ text: 'About', href: '#about' },
