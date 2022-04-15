@@ -16,7 +16,7 @@
 		: 'bg-black text-white'}"
 >
 	<Dots
-		color={active ? '#DAA740' : '#AEB8FE'}
+		color={active ? '#DAA740' : '#737ab0'}
 		class="absolute right-0 bottom-0 scale-125 origin-bottom-right"
 	/>
 	<div class="z-10">
