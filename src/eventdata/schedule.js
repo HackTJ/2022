@@ -36,10 +36,6 @@ const scheduleItems = [
 		time: dayjs('4/16/2022 14:00', timeFormat)
 	},
 	{
-		title: 'Workshop - Intro to Android Studio',
-		time: dayjs('4/16/2022 14:00', timeFormat)
-	},
-	{
 		title: 'Workshop - Intro to iOS Development',
 		time: dayjs('4/16/2022 14:00', timeFormat)
 	},
@@ -58,6 +54,22 @@ const scheduleItems = [
 	{
 		title: 'Afternoon Snack',
 		time: dayjs('4/16/2022 16:00', timeFormat)
+	},
+	{
+		title: 'Workshop - Intro to Unity',
+		time: dayjs('4/16/2022 16:30', timeFormat)
+	},
+	{
+		title: 'Workshop - echo3D',
+		time: dayjs('4/16/2022 16:30', timeFormat)
+	},
+	{
+		title: 'MLH Werewolf',
+		time: dayjs('4/16/2022 17:30', timeFormat)
+	},
+	{
+		title: 'Easter Egg Hunt',
+		time: dayjs('4/16/2022 18:00', timeFormat)
 	},
 	{
 		title: 'Dinner',

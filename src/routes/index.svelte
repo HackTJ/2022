@@ -10,7 +10,7 @@
 	// import AboutCard from '../components/Index/AboutCard.svelte';
 	import Modal from 'svelte-simple-modal';
 	import { sponsorData, teamMembers } from '../eventdata';
-	import { googleMapsKey } from '../keys/.';	
+	import { googleMapsKey } from '../keys/.';
 
 	const navItems = [
 		{ text: 'About', href: '#about' },

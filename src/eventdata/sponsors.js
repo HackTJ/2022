@@ -102,12 +102,6 @@ const partnershipData = {
 	bg: 'bg-spruce-200',
 	cards: sponsors.partners
 };
-const sponsorData = [
-	goldTierData,
-	silverTierData,
-	bronzeTierData,
-	prizeTierData,
-	partnershipData
-];
+const sponsorData = [goldTierData, silverTierData, bronzeTierData, prizeTierData, partnershipData];
 
-export default sponsorData
+export default sponsorData;
