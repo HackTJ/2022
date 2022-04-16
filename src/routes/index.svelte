@@ -9,42 +9,8 @@
 	import CloseButton from '../components/Index/CloseButton.svelte';
 	// import AboutCard from '../components/Index/AboutCard.svelte';
 	import Modal from 'svelte-simple-modal';
-	import { sponsors, teamMembers } from '../eventdata';
-	import { googleMapsKey } from '../keys/.';
-
-	// Sponsorship Tiers Code
-	const goldTierData = {
-		title: 'GOLD TIER',
-		bg: 'bg-[#D6B570]',
-		cards: sponsors.gold
-	};
-	const silverTierData = {
-		title: 'SILVER TIER',
-		bg: 'bg-[#C9D4E5]',
-		cards: sponsors.silver
-	};
-	const bronzeTierData = {
-		title: 'BRONZE TIER',
-		bg: 'bg-[#AF7A6D]',
-		cards: sponsors.bronze
-	};
-	const prizeTierData = {
-		title: 'PRIZE TIER',
-		bg: 'bg-[#DEDBD2]',
-		cards: sponsors.prize
-	};
-	const partnershipData = {
-		title: 'PARTNERS',
-		bg: 'bg-spruce-200',
-		cards: sponsors.partners
-	};
-	const tierSectionData = [
-		goldTierData,
-		silverTierData,
-		bronzeTierData,
-		prizeTierData,
-		partnershipData
-	];
+	import { sponsorData, teamMembers } from '../eventdata';
+	import { googleMapsKey } from '../keys/.';	
 
 	const navItems = [
 		{ text: 'About', href: '#about' },
@@ -99,15 +65,15 @@
 				<br />
 				Build the next greatest thing - oh, and bring your friends along too.
 			</h3>
-			<div class="inline-block mt-3 w-48">
-				<a
+			<div class="inline-block mt-3 w-48 space-x-2">
+				<!-- <a
 					href="{base}/register"
 					class="block text-center py-3 bg-theme-100 hover:bg-theme-200 text-blueberry-800 text-xl font-bold rounded-2xl"
 					>Register</a
-				>
+				> -->
 				<a
 					href="{base}/schedule"
-					class="block mt-2 text-center py-3 bg-spruce-100 hover:bg-spruce-200 text-blueberry-800 text-xl font-bold rounded-2xl"
+					class="block text-center py-3 bg-spruce-100 hover:bg-spruce-200 text-blueberry-800 text-xl font-bold rounded-2xl"
 					>Schedule</a
 				>
 			</div>
@@ -201,7 +167,7 @@
 			you're interested or have any questions!
 		</h3>
 	</div>
-	{#each tierSectionData as { bg, cards, title }}
+	{#each sponsorData as { bg, cards, title }}
 		<SponsorsReel {bg} cardsData={cards} {title} />
 	{/each}
 </section>

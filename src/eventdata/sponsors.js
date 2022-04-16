@@ -4,7 +4,7 @@
 
 import { base } from '$app/paths';
 
-export default {
+const sponsors = {
 	gold: [
 		{
 			src: `${base}/sponsorlogos/eastbanc.png`,
@@ -76,3 +76,38 @@ export default {
 		}
 	]
 };
+
+const goldTierData = {
+	title: 'GOLD TIER',
+	bg: 'bg-[#D6B570]',
+	cards: sponsors.gold
+};
+const silverTierData = {
+	title: 'SILVER TIER',
+	bg: 'bg-[#C9D4E5]',
+	cards: sponsors.silver
+};
+const bronzeTierData = {
+	title: 'BRONZE TIER',
+	bg: 'bg-[#AF7A6D]',
+	cards: sponsors.bronze
+};
+const prizeTierData = {
+	title: 'PRIZE TIER',
+	bg: 'bg-[#DEDBD2]',
+	cards: sponsors.prize
+};
+const partnershipData = {
+	title: 'PARTNERS',
+	bg: 'bg-spruce-200',
+	cards: sponsors.partners
+};
+const sponsorData = [
+	goldTierData,
+	silverTierData,
+	bronzeTierData,
+	prizeTierData,
+	partnershipData
+];
+
+export default sponsorData
